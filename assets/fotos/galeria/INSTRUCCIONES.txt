@@ -1,0 +1,26 @@
+FOTOS PARA LA SECCIÓN "FOTOS & VIDEOS" (tarjetas de galería)
+=============================================================
+Descarga 5 fotos representativas y guárdalas con estos nombres exactos:
+
+Galeria1.jpg → Torneo Promesas 2024
+              Fuente: https://us-hntalents.pixieset.com/torneopromesaspuertocortes/
+              (cualquier foto del torneo en Puerto Cortés)
+
+Galeria2.jpg → Mundialito Colegial 2024
+              Fuente: https://www.facebook.com/ushntalents1/
+              (busca el álbum del Mundialito Colegial 2024)
+
+Galeria3.jpg → Torneo Elite #6
+              Fuente: Facebook/Instagram de la organización
+              (cualquier foto de ese torneo o de jóvenes jugando)
+
+Galeria4.jpg → Campamentos U14 & U16
+              Fuente: https://www.instagram.com/us_hn_talents/
+              (foto de campamento o entrenamiento)
+
+Galeria5.jpg → La Champions
+              Fuente: https://us-hntalents.pixieset.com/lachampionsushntalents/
+              (cualquier foto de La Champions)
+
+NOTA: Las imágenes pueden ser JPG o PNG. El código ya está listo,
+solo pon los archivos aquí con esos nombres exactos.

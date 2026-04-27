@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="US-HN Talents - Promoviendo el desarrollo integral de jóvenes hondureños a través del fútbol">
+  <meta name="theme-color" content="#0A1628">
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://ushn.org">
+  <meta property="og:site_name"   content="US-HN Talents">
+  <meta property="og:title"       content="US-HN Talents | Cada Niño Tiene un Sueño">
+  <meta property="og:description" content="Promovemos el desarrollo integral de jóvenes hondureños utilizando la pasión del fútbol como herramienta de transformación social. ONG 501(c)(3).">
+  <meta property="og:image"       content="assets/logos/US-HN-TALENTS-LOGO.png">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="US-HN Talents | Cada Niño Tiene un Sueño">
+  <meta name="twitter:description" content="Promovemos el desarrollo integral de jóvenes hondureños utilizando la pasión del fútbol como herramienta de transformación social.">
+  <meta name="twitter:image"       content="assets/logos/US-HN-TALENTS-LOGO.png">
+  <title>US-HN Talents | Cada Niño Tiene un Sueño</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="assets/logos/US-HN-TALENTS-LOGO.png">
+  <link rel="apple-touch-icon" href="assets/logos/US-HN-TALENTS-LOGO.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Page loader: hides FOUC while custom fonts download -->
+  <div id="page-loader" aria-hidden="true"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#inicio" class="nav__logo">
+        <img src="assets/logos/US-HN-TALENTS-LOGO.png" alt="US-HN Talents" class="nav__logo-icon">
+        <div class="nav__logo-text">
+          <span class="nav__logo-name">US-HN</span>
+          <span class="nav__logo-tagline">Talents</span>
+        </div>
+      </a>
+
+      <div class="nav__menu" id="navMenu">
+        <a href="#inicio" class="nav__link active" data-i18n="nav.inicio">Inicio</a>
+        <a href="#quienes-somos" class="nav__link" data-i18n="nav.quienes">Quiénes Somos</a>
+        <a href="#que-hacemos" class="nav__link" data-i18n="nav.que">Qué Hacemos</a>
+        <a href="#eventos" class="nav__link" data-i18n="nav.eventos">Eventos</a>
+        <a href="#media" class="nav__link" data-i18n="nav.media">Fotos &amp; Videos</a>
+        <a href="#historias" class="nav__link" data-i18n="nav.historias">Historias</a>
+        <a href="#la-champions" class="nav__link" data-i18n="nav.champions">La Champions</a>
+        <a href="#contacto" class="nav__link nav__link--cta" data-i18n="nav.donar">Donar</a>
+      </div>
+
+      <div class="nav__actions">
+        <button class="nav__lang-toggle" id="langToggle" aria-label="Cambiar idioma">
+          <span class="nav__lang-active">ES</span>
+          <span class="nav__lang-sep">/</span>
+          <span class="nav__lang-other">EN</span>
+        </button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg">
+      <div class="hero__grid"></div>
+      <div class="hero__glow hero__glow--blue"></div>
+      <div class="hero__glow hero__glow--gold"></div>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__split">
+
+        <div class="hero__left">
+          <div class="hero__badge animate-up" style="--d:0.1s">
+            <span class="hero__badge-dot"></span>
+            <span data-i18n="hero.badge">Organización Sin Fines de Lucro · Honduras</span>
+          </div>
+
+          <h1 class="hero__title animate-up" style="--d:0.25s">
+            <span class="hero__line1" data-i18n="hero.line1">CADA NIÑO</span>
+            <span class="hero__line2" data-i18n="hero.line2">TIENE UN</span>
+            <span class="hero__line3">
+              <span data-i18n="hero.line3">SUEÑO</span><span class="hero__ball">⚽</span>
+            </span>
+          </h1>
+
+          <p class="hero__sub animate-up" style="--d:0.45s" data-i18n="hero.subtitle">
+            Promovemos el desarrollo integral de jóvenes hondureños utilizando la pasión del fútbol como herramienta de transformación social.
+          </p>
+
+          <div class="hero__actions animate-up" style="--d:0.6s">
+            <a href="#quienes-somos" class="btn btn--primary" data-i18n="hero.cta1">Conoce Nuestra Historia</a>
+            <a href="#contacto" class="btn btn--outline" data-i18n="hero.cta2">Apoya la Causa</a>
+          </div>
+        </div>
+
+        <div class="hero__right animate-up" style="--d:0.5s">
+          <div class="hero__carousel">
+            <div class="hero__slide active">
+              <img src="assets/fotos/hero/Inicio1.jpg" alt="US-HN Talents">
+            </div>
+            <div class="hero__slide">
+              <img src="assets/fotos/hero/Inicio2.jpg" alt="US-HN Talents">
+            </div>
+            <div class="hero__slide">
+              <img src="assets/fotos/hero/Inicio3.jpg" alt="US-HN Talents">
+            </div>
+            <div class="hero__slide">
+              <img src="assets/fotos/hero/Inicio4.jpg" alt="US-HN Talents">
+            </div>
+            <div class="hero__slide">
+              <img src="assets/fotos/hero/Inicio5.jpg" alt="US-HN Talents">
+            </div>
+            <div class="hero__dots">
+              <button class="hero__dot active" aria-label="Foto 1"></button>
+              <button class="hero__dot" aria-label="Foto 2"></button>
+              <button class="hero__dot" aria-label="Foto 3"></button>
+              <button class="hero__dot" aria-label="Foto 4"></button>
+              <button class="hero__dot" aria-label="Foto 5"></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="hero__scroll animate-up" style="--d:1s">
+      <div class="hero__scroll-line"></div>
+      <span data-i18n="hero.scroll">Desplazar</span>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats" id="stats">
+    <div class="stats__inner">
+      <div class="stat reveal">
+        <span class="stat__num" data-target="500" data-suffix="+">0</span>
+        <span class="stat__lbl" data-i18n="stats.jovenes">Jóvenes Impactados</span>
+      </div>
+      <div class="stat__div"></div>
+      <div class="stat reveal">
+        <span class="stat__num" data-target="20" data-suffix="+">0</span>
+        <span class="stat__lbl" data-i18n="stats.torneos">Torneos Realizados</span>
+      </div>
+      <div class="stat__div"></div>
+      <div class="stat reveal">
+        <span class="stat__num" data-target="5" data-suffix="">0</span>
+        <span class="stat__lbl" data-i18n="stats.anos">Años de Impacto</span>
+      </div>
+      <div class="stat__div"></div>
+      <div class="stat reveal">
+        <span class="stat__num" data-target="24" data-suffix="+">0</span>
+        <span class="stat__lbl" data-i18n="stats.equipos">Equipos por Torneo</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUIÉNES SOMOS ===== -->
+  <section class="about" id="quienes-somos">
+    <div class="about__container">
+      <div class="about__copy reveal">
+        <div class="label" data-i18n="about.label">Quiénes Somos</div>
+        <h2 class="title title--dark" data-i18n="about.title">Una organización construida sobre sueños y dedicación</h2>
+        <p class="about__p" data-i18n="about.p1">US-HN Talents es una organización hondureña sin fines de lucro dedicada a transformar la vida de jóvenes a través del deporte. Creemos que el fútbol tiene el poder de inspirar, unir y cambiar comunidades enteras.</p>
+        <p class="about__p" data-i18n="about.p2">Somos también una organización 501(c)(3) registrada en los Estados Unidos, lo que permite que tus donaciones sean deducibles de impuestos conforme a la ley aplicable.</p>
+
+        <div class="about__cards">
+          <div class="about__card">
+            <div class="about__card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="about.mis.title">Misión</h3>
+              <p data-i18n="about.mis.text">Promover el desarrollo integral de nuestros jóvenes utilizando la pasión del fútbol como disciplina para inspirarlos a creer en sí mismos.</p>
+            </div>
+          </div>
+          <div class="about__card about__card--gold">
+            <div class="about__card-icon about__card-icon--gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="about.vis.title">Visión</h3>
+              <p data-i18n="about.vis.text">Ser una organización de referencia para las comunidades más desfavorecidas de Honduras, ofreciendo vías para mejorar su calidad de vida.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__visual reveal reveal--right">
+        <div class="about__slider" id="aboutSlider">
+          <div class="about__slides">
+            <div class="about__slide active"><img src="assets/fotos/quienes-somos/QuienesSomos1.jpg" alt="US-HN Talents"></div>
+            <div class="about__slide"><img src="assets/fotos/quienes-somos/QuienesSomos2.jpg" alt="US-HN Talents"></div>
+            <div class="about__slide"><img src="assets/fotos/quienes-somos/QuienesSomos3.jpg" alt="US-HN Talents"></div>
+            <div class="about__slide"><img src="assets/fotos/quienes-somos/QuienesSomos4.jpg" alt="US-HN Talents"></div>
+            <div class="about__slide"><img src="assets/fotos/quienes-somos/QuienesSomos5.jpg" alt="US-HN Talents"></div>
+            <div class="about__slide"><img src="assets/fotos/quienes-somos/QuienesSomos6.jpg" alt="US-HN Talents"></div>
+            <div class="about__slide"><img src="assets/fotos/quienes-somos/QuienesSomos7.jpg" alt="US-HN Talents"></div>
+          </div>
+          <button class="about__arrow about__arrow--prev" aria-label="Anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <button class="about__arrow about__arrow--next" aria-label="Siguiente">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+          <div class="about__slider-dots"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUÉ HACEMOS ===== -->
+  <section class="programs" id="que-hacemos">
+    <div class="programs__bg"></div>
+    <div class="programs__container">
+      <div class="programs__head reveal">
+        <div class="label" data-i18n="programs.label">Qué Hacemos</div>
+        <h2 class="title title--light" data-i18n="programs.title">El fútbol como herramienta de transformación</h2>
+        <p class="programs__sub" data-i18n="programs.sub">Cada programa está diseñado para desarrollar no solo atletas, sino personas íntegras con valores sólidos.</p>
+      </div>
+
+      <div class="programs__grid">
+        <div class="prog-card reveal" data-delay="0">
+          <div class="prog-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 data-i18n="prog.p1.t">Disciplina</h3>
+          <p data-i18n="prog.p1.d">Formamos jóvenes con carácter, responsabilidad y compromiso a través de la práctica constante del deporte.</p>
+        </div>
+
+        <div class="prog-card reveal" data-delay="100">
+          <div class="prog-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 data-i18n="prog.p2.t">Trabajo en Equipo</h3>
+          <p data-i18n="prog.p2.d">El fútbol enseña a colaborar, respetar y crecer juntos hacia un objetivo común.</p>
+        </div>
+
+        <div class="prog-card reveal" data-delay="200">
+          <div class="prog-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <h3 data-i18n="prog.p3.t">Educación</h3>
+          <p data-i18n="prog.p3.d">Creamos puentes entre el deporte y la educación, abriendo nuevas oportunidades para nuestros jóvenes.</p>
+        </div>
+
+        <div class="prog-card reveal" data-delay="0">
+          <div class="prog-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3 data-i18n="prog.p4.t">Salud y Bienestar</h3>
+          <p data-i18n="prog.p4.d">Promovemos la actividad física como base de una vida saludable y la prevención de conductas de riesgo.</p>
+        </div>
+
+        <div class="prog-card reveal" data-delay="100">
+          <div class="prog-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3 data-i18n="prog.p5.t">Inclusión Social</h3>
+          <p data-i18n="prog.p5.d">Abrimos las puertas sin importar el origen, la condición económica ni el nivel de habilidad.</p>
+        </div>
+
+        <div class="prog-card reveal" data-delay="200">
+          <div class="prog-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3 data-i18n="prog.p6.t">Resiliencia</h3>
+          <p data-i18n="prog.p6.d">Fortalecemos la confianza y la capacidad de superar obstáculos dentro y fuera de la cancha.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRÓXIMO EVENTO ===== -->
+  <section class="next-event" id="proximo-evento">
+    <div class="next-event__inner">
+
+      <div class="next-event__left reveal">
+        <div class="next-event__pulse">
+          <span class="next-event__dot"></span>
+          <span data-i18n="next.status">INSCRIPCIONES ABIERTAS</span>
+        </div>
+        <div class="label label--gold" data-i18n="next.label">Próximo Evento</div>
+        <h2 class="next-event__title" data-i18n="next.title">Torneo Elite #6</h2>
+        <p class="next-event__desc" data-i18n="next.desc">La sexta edición de nuestro torneo más competitivo. Categorías 2007/2008 y 2009/2010. ¡No te quedes fuera!</p>
+      </div>
+
+      <div class="next-event__right reveal reveal--right">
+        <div class="next-event__details">
+          <div class="next-event__detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <span data-i18n="next.loc.label">Sede</span>
+              <strong data-i18n="next.loc">Honduras</strong>
+            </div>
+          </div>
+          <div class="next-event__detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <div>
+              <span data-i18n="next.cat.label">Categorías</span>
+              <strong data-i18n="next.cat">2007/2008 · 2009/2010</strong>
+            </div>
+          </div>
+        </div>
+        <div class="next-event__btns">
+          <a href="#contacto" class="btn btn--gold" data-i18n="next.cta">Quiero Participar</a>
+          <a href="#eventos" class="btn btn--outline" data-i18n="next.info">Ver todos los eventos</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== EVENTOS ===== -->
+  <section class="events" id="eventos">
+    <div class="events__container">
+      <div class="events__head reveal">
+        <div class="label" data-i18n="events.label">Torneos y Campamentos</div>
+        <h2 class="title title--dark" data-i18n="events.title">Nuestros Eventos</h2>
+      </div>
+
+      <div class="events__grid">
+        <!-- 1. Campamento Sub 16 2023 -->
+        <div class="ev-card ev-card--red reveal" data-event="e6">
+          <div class="ev-card__top">
+            <span class="ev-card__badge" data-i18n="ev.e6.badge">Campamento</span>
+            <span class="ev-card__year">2023</span>
+          </div>
+          <h3 data-i18n="ev.e6.title">Campamento Sub 16</h3>
+          <p class="ev-card__detail" data-i18n="ev.e6.detail">Desarrollo intensivo</p>
+          <p class="ev-card__loc">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="ev.e6.loc">Honduras</span>
+          </p>
+          <p class="ev-card__desc" data-i18n="ev.e6.desc">Programa especializado para la categoría sub-16 con enfoque en técnica y formación personal.</p>
+          <div class="ev-card__cta">
+            <span data-i18n="ev.verEvento">Ver evento</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="13"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </div>
+
+        <!-- 2. Campamento U14 & U16 2023 -->
+        <div class="ev-card ev-card--gold reveal" data-event="e4" data-delay="100">
+          <div class="ev-card__top">
+            <span class="ev-card__badge" data-i18n="ev.e4.badge">Campamento</span>
+            <span class="ev-card__year">2023</span>
+          </div>
+          <h3 data-i18n="ev.e4.title">Campamento U14 &amp; U16</h3>
+          <p class="ev-card__detail" data-i18n="ev.e4.detail">Formación técnica y humana</p>
+          <p class="ev-card__loc">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="ev.e4.loc">Honduras</span>
+          </p>
+          <p class="ev-card__desc" data-i18n="ev.e4.desc">Campamentos de alta intensidad donde jóvenes de 14 a 16 años desarrollan sus habilidades.</p>
+          <div class="ev-card__cta">
+            <span data-i18n="ev.verEvento">Ver evento</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="13"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </div>
+
+        <!-- 3. Mundialito Colegial 2023 -->
+        <div class="ev-card ev-card--teal reveal" data-event="e7" data-delay="200">
+          <div class="ev-card__top">
+            <span class="ev-card__badge" data-i18n="ev.e7.badge">Torneo</span>
+            <span class="ev-card__year">2023</span>
+          </div>
+          <h3 data-i18n="ev.e7.title">Mundialito Colegial</h3>
+          <p class="ev-card__detail" data-i18n="ev.e7.detail">24 equipos colegiales</p>
+          <p class="ev-card__loc">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="ev.e7.loc">San Pedro Sula</span>
+          </p>
+          <p class="ev-card__desc" data-i18n="ev.e7.desc">Primera edición del Mundialito Colegial, reuniendo a los mejores equipos estudiantiles de Honduras.</p>
+          <div class="ev-card__cta">
+            <span data-i18n="ev.verEvento">Ver evento</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="13"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </div>
+
+        <!-- 4. Torneo Talentos HN 2023 -->
+        <div class="ev-card ev-card--purple reveal" data-event="e5">
+          <div class="ev-card__top">
+            <span class="ev-card__badge" data-i18n="ev.e5.badge">Torneo</span>
+            <span class="ev-card__year">2023</span>
+          </div>
+          <h3 data-i18n="ev.e5.title">Torneo Talentos HN</h3>
+          <p class="ev-card__detail" data-i18n="ev.e5.detail">Equipos campeones</p>
+          <p class="ev-card__loc">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="ev.e5.loc">Honduras</span>
+          </p>
+          <p class="ev-card__desc" data-i18n="ev.e5.desc">Los mejores equipos del país compiten por el máximo honor en el fútbol juvenil hondureño.</p>
+          <div class="ev-card__cta">
+            <span data-i18n="ev.verEvento">Ver evento</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="13"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </div>
+
+        <!-- 5. Torneo Talentos 2024 -->
+        <div class="ev-card ev-card--indigo reveal" data-event="e8" data-delay="100">
+          <div class="ev-card__top">
+            <span class="ev-card__badge" data-i18n="ev.e8.badge">Torneo</span>
+            <span class="ev-card__year">2024</span>
+          </div>
+          <h3 data-i18n="ev.e8.title">Torneo Talentos 2024</h3>
+          <p class="ev-card__detail" data-i18n="ev.e8.detail">Cat. 2005-2006 · 2010-2011</p>
+          <p class="ev-card__loc">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="ev.e8.loc">Honduras</span>
+          </p>
+          <p class="ev-card__desc" data-i18n="ev.e8.desc">Torneo Talentos Honduras 2024. Competencia entre academias y selecciones por categorías de edad.</p>
+          <div class="ev-card__cta">
+            <span data-i18n="ev.verEvento">Ver evento</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="13"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </div>
+
+        <!-- 6. Torneo Elite #6 -->
+        <div class="ev-card ev-card--blue reveal" data-event="e1" data-delay="200">
+          <div class="ev-card__top">
+            <span class="ev-card__badge" data-i18n="ev.e1.badge">Torneo</span>
+            <span class="ev-card__year">2024</span>
+          </div>
+          <h3 data-i18n="ev.e1.title">Torneo Elite #6</h3>
+          <p class="ev-card__detail" data-i18n="ev.e1.detail">Categorías 2007/2008 y 2009/2010</p>
+          <p class="ev-card__loc">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="ev.e1.loc">Honduras</span>
+          </p>
+          <p class="ev-card__desc" data-i18n="ev.e1.desc">Competencia de alto nivel para las categorías juveniles más prometedoras del país.</p>
+          <div class="ev-card__cta">
+            <span data-i18n="ev.verEvento">Ver evento</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="13"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </div>
+
+        <!-- 7. Mundialito Colegial 2024 -->
+        <div class="ev-card ev-card--green reveal" data-event="e2">
+          <div class="ev-card__top">
+            <span class="ev-card__badge" data-i18n="ev.e2.badge">Torneo</span>
+            <span class="ev-card__year">2024</span>
+          </div>
+          <h3 data-i18n="ev.e2.title">Mundialito Colegial</h3>
+          <p class="ev-card__detail" data-i18n="ev.e2.detail">24 equipos colegiales</p>
+          <p class="ev-card__loc">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="ev.e2.loc">San Pedro Sula</span>
+          </p>
+          <p class="ev-card__desc" data-i18n="ev.e2.desc">La copa colegial más importante, reuniendo a los mejores equipos estudiantiles de Honduras.</p>
+          <div class="ev-card__cta">
+            <span data-i18n="ev.verEvento">Ver evento</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="13"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </div>
+
+        <!-- 8. Torneo Promesas 2024 -->
+        <div class="ev-card ev-card--orange reveal" data-event="e3" data-delay="100">
+          <div class="ev-card__top">
+            <span class="ev-card__badge" data-i18n="ev.e3.badge">Torneo</span>
+            <span class="ev-card__year">2024</span>
+          </div>
+          <h3 data-i18n="ev.e3.title">Torneo Promesas</h3>
+          <p class="ev-card__detail" data-i18n="ev.e3.detail">Jóvenes talentos emergentes</p>
+          <p class="ev-card__loc">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="ev.e3.loc">Puerto Cortés</span>
+          </p>
+          <p class="ev-card__desc" data-i18n="ev.e3.desc">Plataforma para descubrir y potenciar a las nuevas promesas del fútbol hondureño.</p>
+          <div class="ev-card__cta">
+            <span data-i18n="ev.verEvento">Ver evento</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="13"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MEDIA: FOTOS & VIDEOS ===== -->
+  <section class="media" id="media">
+    <div class="media__container">
+      <div class="media__head reveal">
+        <div class="label" data-i18n="media.label">Multimedia</div>
+        <h2 class="title title--dark" data-i18n="media.title">Fotos &amp; Videos</h2>
+        <p class="media__sub" data-i18n="media.sub">Revive los mejores momentos de nuestros torneos y campamentos.</p>
+      </div>
+
+      <!-- YouTube Banner -->
+      <div class="media__yt-banner reveal">
+        <div class="media__yt-icon">
+          <svg viewBox="0 0 24 24" fill="white" width="36" height="36"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.54C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#FF0000"/></svg>
+        </div>
+        <div class="media__yt-copy">
+          <h3 data-i18n="media.yt.title">Canal de YouTube</h3>
+          <p data-i18n="media.yt.sub">Partidos completos, entrevistas, highlights y momentos especiales de todos nuestros eventos.</p>
+        </div>
+        <a href="https://www.youtube.com/@ushntalents" target="_blank" rel="noopener" class="btn btn--primary" data-i18n="media.yt.btn">Ver Canal →</a>
+      </div>
+
+      <!-- Videos Embebidos -->
+      <div class="media__videos reveal">
+        <h3 class="media__videos-title" data-i18n="media.videos.title">Últimos Videos</h3>
+        <div class="media__videos-grid" id="ytVideosGrid"></div>
+        <div class="media__videos-cta">
+          <a href="https://www.youtube.com/@ushntalents" target="_blank" rel="noopener" class="btn btn--outline-dark" data-i18n="media.yt.btn">Ver Canal →</a>
+        </div>
+      </div>
+
+      <!-- Photo Galleries -->
+      <div class="media__galleries">
+        <a href="https://us-hntalents.pixieset.com/torneopromesaspuertocortes/" target="_blank" rel="noopener" class="gallery-card reveal">
+          <div class="gallery-card__thumb gallery-card__thumb--1">
+            <div class="gallery-card__overlay">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="28"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+          </div>
+          <div class="gallery-card__info">
+            <span class="gallery-card__cat" data-i18n="ev.e3.badge">Torneo</span>
+            <h4 data-i18n="ev.e3.title">Torneo Promesas 2024</h4>
+            <p data-i18n="media.gallery.view">Ver galería de fotos →</p>
+          </div>
+        </a>
+
+        <a href="https://www.facebook.com/ushntalents1/" target="_blank" rel="noopener" class="gallery-card reveal" data-delay="120">
+          <div class="gallery-card__thumb gallery-card__thumb--2">
+            <div class="gallery-card__overlay">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="28"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+            </div>
+          </div>
+          <div class="gallery-card__info">
+            <span class="gallery-card__cat" data-i18n="ev.e2.badge">Torneo</span>
+            <h4 data-i18n="ev.e2.title">Mundialito Colegial 2024</h4>
+            <p data-i18n="media.gallery.fb">Ver videos en Facebook →</p>
+          </div>
+        </a>
+
+        <a href="https://www.youtube.com/@ushntalents" target="_blank" rel="noopener" class="gallery-card reveal" data-delay="240">
+          <div class="gallery-card__thumb gallery-card__thumb--3">
+            <div class="gallery-card__overlay">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="28"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+            </div>
+          </div>
+          <div class="gallery-card__info">
+            <span class="gallery-card__cat" data-i18n="ev.e1.badge">Torneo</span>
+            <h4 data-i18n="ev.e1.title">Torneo Elite #6</h4>
+            <p data-i18n="media.gallery.yt">Ver en YouTube →</p>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/us_hn_talents/" target="_blank" rel="noopener" class="gallery-card reveal" data-delay="360">
+          <div class="gallery-card__thumb gallery-card__thumb--4">
+            <div class="gallery-card__overlay">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="28"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+          </div>
+          <div class="gallery-card__info">
+            <span class="gallery-card__cat" data-i18n="ev.e4.badge">Campamento</span>
+            <h4 data-i18n="ev.e4.title">Campamentos U14 &amp; U16</h4>
+            <p data-i18n="media.gallery.ig">Ver fotos en Instagram →</p>
+          </div>
+        </a>
+
+        <a href="https://us-hntalents.pixieset.com/lachampionsushntalents/" target="_blank" rel="noopener" class="gallery-card reveal" data-delay="480">
+          <div class="gallery-card__thumb gallery-card__thumb--5">
+            <div class="gallery-card__overlay">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="28"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+          </div>
+          <div class="gallery-card__info">
+            <span class="gallery-card__cat" data-i18n="media.champs.cat">La Champions</span>
+            <h4 data-i18n="media.champs.title">Galería La Champions</h4>
+            <p data-i18n="media.gallery.view">Ver galería de fotos →</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== HISTORIAS ===== -->
+  <section class="stories" id="historias">
+    <div class="stories__container">
+      <div class="stories__head reveal">
+        <div class="label" data-i18n="stories.label">Historias</div>
+        <h2 class="title title--light stories__title" data-i18n="stories.title">Más allá de los titulares,<br><em>cada niño tiene un sueño</em></h2>
+      </div>
+
+      <div class="stories__grid">
+        <div class="story-card reveal">
+          <div class="story-card__img story-card__img--1">
+            <span class="story-card__qmark">"</span>
+          </div>
+          <div class="story-card__body">
+            <span class="story-card__cat" data-i18n="story.s1.cat">Comunidad</span>
+            <h3 data-i18n="story.s1.title">Escuela Nueva Generación</h3>
+            <p data-i18n="story.s1.text">US-HN Talents y Copán Maya S.L. visitaron esta institución en Chivana, Omoa, brindando apoyo al desarrollo futbolístico de jóvenes con talento.</p>
+            <a href="#" class="story-card__more" data-i18n="story.more">Leer más →</a>
+          </div>
+        </div>
+
+        <div class="story-card reveal" data-delay="150">
+          <div class="story-card__img story-card__img--2">
+            <span class="story-card__qmark">"</span>
+          </div>
+          <div class="story-card__body">
+            <span class="story-card__cat" data-i18n="story.s2.cat">Impacto Social</span>
+            <h3 data-i18n="story.s2.title">Jóvenes de Nuevo Horizontes</h3>
+            <p data-i18n="story.s2.text">Una iniciativa dirigida a jugadores de la comunidad Nuevo Horizontes, área con recursos limitados, impulsando su crecimiento mediante el deporte.</p>
+            <a href="#" class="story-card__more" data-i18n="story.more">Leer más →</a>
+          </div>
+        </div>
+
+        <div class="story-card reveal" data-delay="300">
+          <div class="story-card__img story-card__img--3">
+            <span class="story-card__qmark">"</span>
+          </div>
+          <div class="story-card__body">
+            <span class="story-card__cat" data-i18n="story.s3.cat">Transformación</span>
+            <h3 data-i18n="story.s3.title">El poder del fútbol</h3>
+            <p data-i18n="story.s3.text">Historias de jóvenes hondureños que encontraron en el fútbol no solo un deporte, sino un camino hacia un futuro mejor.</p>
+            <a href="#" class="story-card__more" data-i18n="story.more">Leer más →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LA CHAMPIONS ===== -->
+  <section class="champs" id="la-champions">
+    <div class="champs__bg"></div>
+    <div class="champs__content reveal">
+      <div class="champs__trophy">
+        <svg viewBox="0 0 80 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 8 H66 L61 48 Q55 68 40 74 Q25 68 19 48 Z" fill="none" stroke="#FFB300" stroke-width="2"/>
+          <path d="M14 14 Q4 14 4 29 Q4 44 19 44" fill="none" stroke="#FFB300" stroke-width="2"/>
+          <path d="M66 14 Q76 14 76 29 Q76 44 61 44" fill="none" stroke="#FFB300" stroke-width="2"/>
+          <path d="M28 74 L22 88 L58 88 L52 74" fill="none" stroke="#FFB300" stroke-width="2"/>
+          <line x1="22" y1="88" x2="58" y2="88" stroke="#FFB300" stroke-width="3" stroke-linecap="round"/>
+          <polygon points="40,22 43.5,32 54,32 46,38 49,48 40,42 31,48 34,38 26,32 36.5,32" fill="#FFB300"/>
+        </svg>
+      </div>
+      <div class="label label--gold" data-i18n="champs.label">El Torneo Máximo</div>
+      <h2 class="champs__title" data-i18n="champs.title">La Champions</h2>
+      <p class="champs__text" data-i18n="champs.text">El evento cumbre de US-HN Talents. La competencia más prestigiosa donde los campeones de todos los torneos se enfrentan para conquistar el título supremo del fútbol juvenil hondureño.</p>
+      <div class="champs__stars">★★★★★</div>
+    </div>
+
+    <!-- CHAMPIONS PANEL -->
+    <div class="cp reveal" id="champs-panel">
+      <div class="cp__cats-row">
+        <span class="cp__cats-label">Categoría:</span>
+        <button class="cp__cat active" data-cat="sub16">⚽ SUB 16</button>
+        <button class="cp__cat" data-cat="sub18">⚽ SUB 18</button>
+      </div>
+      <div class="cp__card">
+        <div class="cp__tabs">
+          <button class="cp__tab active" data-tab="tabla">📊 TABLA</button>
+          <button class="cp__tab" data-tab="llaves">🏆 LLAVES</button>
+          <button class="cp__tab" data-tab="goleadores">⚽ GOLEADORES</button>
+        </div>
+        <div class="cp__body" id="cp-body"></div>
+      </div>
+    </div>
+
+    <div class="champs__cta">
+      <a href="#contacto" class="btn btn--gold btn--lg" data-i18n="champs.cta">Quiero Participar</a>
+    </div>
+  </section>
+
+  <!-- ===== PATROCINADORES ===== -->
+  <section class="sponsors" id="patrocinadores">
+    <div class="sponsors__container">
+      <div class="sponsors__head reveal">
+        <div class="label" data-i18n="sponsors.label">Colaboradores</div>
+        <h2 class="title title--dark" data-i18n="sponsors.title">Quienes nos apoyan</h2>
+        <p class="sponsors__sub" data-i18n="sponsors.sub">Juntos hacemos posible que cada niño cumpla su sueño.</p>
+      </div>
+
+      <!-- Marquee row 1 (sponsors 1-8, duplicated for seamless loop) -->
+      <div class="sponsors__tracks reveal">
+        <div class="sponsors__track-wrap">
+          <div class="sponsors__track">
+            <div class="sp-card"><img src="assets/logos/copan-maya.png" alt="Copán Maya" onerror="this.style.display='none'"><span>Copán Maya S.L.</span></div>
+            <div class="sp-card"><img src="assets/logos/techsources.png" alt="TechSources" onerror="this.style.display='none'"><span>TechSources Specialized Services</span></div>
+            <div class="sp-card"><img src="assets/logos/pro-builders.png" alt="Pro Builders" onerror="this.style.display='none'"><span>Pro Builders</span></div>
+            <div class="sp-card"><img src="assets/logos/sporade.png" alt="Sporade" onerror="this.style.display='none'"><span>Sporade</span></div>
+            <div class="sp-card"><img src="assets/logos/los-andes.png" alt="Los Andes Meat Corp" onerror="this.style.display='none'"><span>Los Andes Meat Corp</span></div>
+            <div class="sp-card"><img src="assets/logos/villas-fitness.png" alt="Villas Fitness Club" onerror="this.style.display='none'"><span>Villas Fitness Club</span></div>
+            <div class="sp-card"><img src="assets/logos/goviajes.jpg" alt="GoViajes Expeditions" onerror="this.style.display='none'"><span>GoViajes Expeditions</span></div>
+            <div class="sp-card"><img src="assets/logos/feih-foundation.png" alt="FEIH Foundation" onerror="this.style.display='none'"><span>FEIH Foundation</span></div>
+            <!-- Duplicate for seamless loop -->
+            <div class="sp-card" aria-hidden="true"><img src="assets/logos/copan-maya.png" alt="" onerror="this.style.display='none'"><span>Copán Maya S.L.</span></div>
+            <div class="sp-card" aria-hidden="true"><img src="assets/logos/techsources.png" alt="" onerror="this.style.display='none'"><span>TechSources Specialized Services</span></div>
+            <div class="sp-card" aria-hidden="true"><img src="assets/logos/pro-builders.png" alt="" onerror="this.style.display='none'"><span>Pro Builders</span></div>
+            <div class="sp-card" aria-hidden="true"><img src="assets/logos/sporade.png" alt="" onerror="this.style.display='none'"><span>Sporade</span></div>
+            <div class="sp-card" aria-hidden="true"><img src="assets/logos/los-andes.png" alt="" onerror="this.style.display='none'"><span>Los Andes Meat Corp</span></div>
+            <div class="sp-card" aria-hidden="true"><img src="assets/logos/villas-fitness.png" alt="" onerror="this.style.display='none'"><span>Villas Fitness Club</span></div>
+            <div class="sp-card" aria-hidden="true"><img src="assets/logos/goviajes.jpg" alt="" onerror="this.style.display='none'"><span>GoViajes Expeditions</span></div>
+            <div class="sp-card" aria-hidden="true"><img src="assets/logos/feih-foundation.png" alt="" onerror="this.style.display='none'"><span>FEIH Foundation</span></div>
+          </div>
+        </div>
+
+        <!-- Marquee row 2 (sponsors 9-16, moves in reverse direction) -->
+        <div class="sponsors__track-wrap">
+          <div class="sponsors__track sponsors__track--reverse">
+            <div class="sp-card"><img src="assets/logos/qa-wood-floor.png" alt="QA Wood Floor Services" onerror="this.style.display='none'"><span>QA Wood Floor Services</span></div>
+            <div class="sp-card"><img src="assets/logos/mdg-transport.png" alt="MDG Transport Corp" onerror="this.style.display='none'"><span>MDG Transport Corp</span></div>
+            <div class="sp-card"><img src="assets/logos/huriver.png" alt="Huriver" onerror="this.style.display='none'"><span>Huriver</span></div>
+            <div class="sp-card"><img src="assets/logos/coto-rro.png" alt="Coto-rro Sublimación" onerror="this.style.display='none'"><span>Coto-rro Sublimación</span></div>
+            <div class="sp-card"><img src="assets/logos/mse-tile.png" alt="MSE Tile LLC" onerror="this.style.display='none'"><span>MSE Tile LLC</span></div>
+            <div class="sp-card"><img src="assets/logos/joeltabora.png" alt="Joel Tabora Fotografías" onerror="this.style.display='none'"><span>Joel Tabora Fotografías</span></div>
+            <div class="sp-card"><img src="assets/logos/try-state.jpg" alt="Tri-State Services LLC" onerror="this.style.display='none'"><span>Tri-State Services LLC</span></div>
+            <div class="sp-card"><img src="assets/logos/mym-concreto.jpg" alt="MYM Concreto" onerror="this.style.display='none'"><span>MYM Concreto</span></div>
+            <!-- Duplicate for seamless loop -->
+            <div class="sp-card" aria-hidden="true"><img src="assets/logos/qa-wood-floor.png" alt="" onerror="this.style.display='none'"><span>QA Wood Floor Services</span></div>
+            <div class="sp-card" aria-hidden="true"><img src="assets/logos/mdg-transport.png" alt="" onerror="this.style.display='none'"><span>MDG Transport Corp</span></div>
+            <div class="sp-card" aria-hidden="true"><img src="assets/logos/huriver.png" alt="" onerror="this.style.display='none'"><span>Huriver</span></div>
+            <div class="sp-card" aria-hidden="true"><img src="assets/logos/coto-rro.png" alt="" onerror="this.style.display='none'"><span>Coto-rro Sublimación</span></div>
+            <div class="sp-card" aria-hidden="true"><img src="assets/logos/mse-tile.png" alt="" onerror="this.style.display='none'"><span>MSE Tile LLC</span></div>
+            <div class="sp-card" aria-hidden="true"><img src="assets/logos/joeltabora.png" alt="" onerror="this.style.display='none'"><span>Joel Tabora Fotografías</span></div>
+            <div class="sp-card" aria-hidden="true"><img src="assets/logos/try-state.jpg" alt="" onerror="this.style.display='none'"><span>Tri-State Services LLC</span></div>
+            <div class="sp-card" aria-hidden="true"><img src="assets/logos/mym-concreto.jpg" alt="" onerror="this.style.display='none'"><span>MYM Concreto</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sponsors__join reveal">
+        <p data-i18n="sponsors.join">¿Quieres ser patrocinador?</p>
+        <a href="#contacto" class="btn btn--primary btn--sm" data-i18n="sponsors.cta">Contáctanos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="contact" id="contacto">
+    <div class="contact__container">
+      <div class="contact__info reveal">
+        <div class="label label--blue" data-i18n="contact.label">Únete a la Causa</div>
+        <h2 class="title title--light" data-i18n="contact.title">Juntos podemos cambiar más vidas</h2>
+        <p class="contact__sub" data-i18n="contact.sub">Tu apoyo hace posible que más jóvenes hondureños tengan acceso a programas deportivos de calidad. Cada donación es deducible de impuestos bajo la ley estadounidense.</p>
+
+        <div class="donate-box">
+          <div class="donate-box__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <div class="donate-box__copy">
+            <h3 data-i18n="contact.don.t">Haz una Donación</h3>
+            <p data-i18n="contact.don.sub">501(c)(3) · EIN: 99-3066453 · Deducible de impuestos</p>
+          </div>
+        </div>
+
+        <div class="donate-amounts">
+          <button type="button" class="donate-amount" data-amount="$25" data-subject="Donación $25">
+            <span class="donate-amount__value">$25</span>
+            <span class="donate-amount__desc" data-i18n="donate.a1">Equipa a un jugador</span>
+          </button>
+          <button type="button" class="donate-amount" data-amount="$50" data-subject="Donación $50">
+            <span class="donate-amount__value">$50</span>
+            <span class="donate-amount__desc" data-i18n="donate.a2">Apoya un campamento</span>
+          </button>
+          <button type="button" class="donate-amount donate-amount--featured" data-amount="$100" data-subject="Donación $100">
+            <span class="donate-amount__value">$100</span>
+            <span class="donate-amount__desc" data-i18n="donate.a3">Patrocina un torneo</span>
+          </button>
+          <button type="button" class="donate-amount" data-amount="personalizado" data-subject="Donación personalizada">
+            <span class="donate-amount__value" data-i18n="donate.custom">Otro</span>
+            <span class="donate-amount__desc" data-i18n="donate.customDesc">Monto personalizado</span>
+          </button>
+        </div>
+        <!-- Custom amount form (shown only when "Otro" is selected) -->
+        <div class="donate-custom" id="donateCustom" hidden>
+          <div class="f-group">
+            <label class="f-label" for="customAmount" data-i18n="donate.customAmt">Monto (USD)</label>
+            <input type="number" id="customAmount" class="f-input" placeholder="Ej: 200" min="1" step="1">
+          </div>
+          <div class="f-group">
+            <label class="f-label" for="customReason" data-i18n="donate.customReason">Motivo de la donación</label>
+            <textarea id="customReason" class="f-input f-textarea" rows="3" placeholder="Describe el motivo de tu donación..." data-i18n-ph="donate.customReasonPh"></textarea>
+          </div>
+        </div>
+
+        <button type="button" id="donateBtn" class="btn btn--gold btn--full" data-i18n="contact.don.btn">Donar Ahora</button>
+
+        <div class="contact__direct">
+          <a href="mailto:info@ushn.org" class="contact__email-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@ushn.org
+          </a>
+        </div>
+
+        <div class="contact__social">
+          <p data-i18n="contact.social.lbl">Síguenos en redes sociales:</p>
+          <div class="contact__social-row">
+            <a href="https://www.facebook.com/ushntalents1/" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/us_hn_talents/" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@ushntalents" target="_blank" rel="noopener" class="social-btn" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-6.34 6.33 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.73a8.2 8.2 0 0 0 4.77 1.52V6.79a4.85 4.85 0 0 1-1-.1z"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@ushntalents" target="_blank" rel="noopener" class="social-btn" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.54C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__form-wrap reveal reveal--right">
+        <form class="c-form" id="contactForm" novalidate action="https://api.web3forms.com/submit" method="POST">
+          <!-- Web3Forms: reemplaza WEB3FORMS_ACCESS_KEY con tu clave de web3forms.com/create -->
+          <input type="hidden" name="access_key" value="WEB3FORMS_ACCESS_KEY">
+          <input type="hidden" name="to" value="info@ushn.org">
+          <input type="hidden" name="subject" value="Nuevo mensaje desde ushn.org">
+          <input type="hidden" name="from_name" value="US-HN Talents Web">
+          <input type="checkbox" name="botcheck" style="display:none">
+
+          <h3 data-i18n="form.title">Envíanos un mensaje</h3>
+
+          <div class="f-group">
+            <label class="f-label" for="fname" data-i18n="form.name">Nombre completo</label>
+            <input type="text" id="fname" name="name" class="f-input" required placeholder="Tu nombre">
+          </div>
+          <div class="f-group">
+            <label class="f-label" for="femail" data-i18n="form.email">Correo electrónico</label>
+            <input type="email" id="femail" name="email" class="f-input" required placeholder="tu@email.com">
+          </div>
+          <div class="f-group">
+            <label class="f-label" for="fsubject" data-i18n="form.subject">Asunto</label>
+            <select id="fsubject" name="subject" class="f-input f-select">
+              <option value="" data-i18n="form.subj.def">Selecciona un asunto</option>
+              <option value="donacion" data-i18n="form.subj.don">Quiero Donar</option>
+              <option value="patrocinio" data-i18n="form.subj.pat">Patrocinio</option>
+              <option value="torneo" data-i18n="form.subj.tor">Información de Torneos</option>
+              <option value="otro" data-i18n="form.subj.otro">Otro</option>
+            </select>
+          </div>
+          <div class="f-group">
+            <label class="f-label" for="fmsg" data-i18n="form.msg">Mensaje</label>
+            <textarea id="fmsg" name="message" class="f-input f-textarea" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">
+            <span class="btn-txt" data-i18n="form.submit">Enviar Mensaje</span>
+            <span class="btn-arr">→</span>
+          </button>
+
+          <div class="f-success" id="formSuccess" hidden>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="form.ok">¡Mensaje enviado! Nos pondremos en contacto pronto.</span>
+          </div>
+          <div class="f-error" id="formError" hidden>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <span data-i18n="form.err">Hubo un problema al enviar. Intenta de nuevo o escríbenos a info@ushn.org</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="#inicio" class="nav__logo">
+          <img src="assets/logos/US-HN-TALENTS-LOGO.png" alt="US-HN Talents" class="nav__logo-icon">
+          <div class="nav__logo-text">
+            <span class="nav__logo-name">US-HN</span>
+            <span class="nav__logo-tagline">Talents</span>
+          </div>
+        </a>
+        <p class="footer__tagline" data-i18n="footer.tagline">Cada niño tiene un sueño.<br>Nosotros ayudamos a cumplirlo.</p>
+        <div class="footer__social">
+          <a href="https://www.facebook.com/ushntalents1/" target="_blank" rel="noopener" class="social-btn social-btn--sm" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/us_hn_talents/" target="_blank" rel="noopener" class="social-btn social-btn--sm" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@ushntalents" target="_blank" rel="noopener" class="social-btn social-btn--sm" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-6.34 6.33 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.73a8.2 8.2 0 0 0 4.77 1.52V6.79a4.85 4.85 0 0 1-1-.1z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@ushntalents" target="_blank" rel="noopener" class="social-btn social-btn--sm" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.54C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer__nav">
+        <div class="footer__nav-col">
+          <h4 data-i18n="footer.n1">Navegación</h4>
+          <ul>
+            <li><a href="#inicio" data-i18n="nav.inicio">Inicio</a></li>
+            <li><a href="#quienes-somos" data-i18n="nav.quienes">Quiénes Somos</a></li>
+            <li><a href="#que-hacemos" data-i18n="nav.que">Qué Hacemos</a></li>
+            <li><a href="#historias" data-i18n="nav.historias">Historias</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-col">
+          <h4 data-i18n="footer.n2">Eventos</h4>
+          <ul>
+            <li><a href="#eventos" data-i18n="ev.e1.title">Torneo Elite #6</a></li>
+            <li><a href="#eventos" data-i18n="ev.e2.title">Mundialito Colegial</a></li>
+            <li><a href="#eventos" data-i18n="ev.e3.title">Torneo Promesas</a></li>
+            <li><a href="#la-champions" data-i18n="nav.champions">La Champions</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-col">
+          <h4 data-i18n="footer.n3">Legal</h4>
+          <ul>
+            <li><span>501(c)(3) Nonprofit</span></li>
+            <li><span>EIN: 99-3066453</span></li>
+            <li><a href="#contacto" data-i18n="nav.donar">Donaciones</a></li>
+            <li><a href="#patrocinadores" data-i18n="footer.sponsors">Patrocinadores</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="footer__bottom">
+      <p data-i18n="footer.copy">© 2026 US-HN Talents · Todos los derechos reservados</p>
+      <p class="footer__tax" data-i18n="footer.tax">Las donaciones son deducibles de impuestos conforme a la ley aplicable.</p>
+    </div>
+  </footer>
+
+  <!-- Barra de progreso de scroll -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Botón volver arriba -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- ===== EVENT MODAL ===== -->
+  <div class="ev-modal" id="evModal" role="dialog" aria-modal="true" aria-labelledby="evModalTitle" hidden>
+    <div class="ev-modal__overlay" id="evModalOverlay"></div>
+    <div class="ev-modal__panel">
+      <button class="ev-modal__close" id="evModalClose" aria-label="Cerrar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="ev-modal__header">
+        <div class="ev-modal__meta">
+          <span class="ev-modal__badge" id="evModalBadge"></span>
+          <span class="ev-modal__year" id="evModalYear"></span>
+        </div>
+        <h2 class="ev-modal__title" id="evModalTitle"></h2>
+        <div class="ev-modal__info" id="evModalInfo"></div>
+      </div>
+      <div class="ev-modal__body" id="evModalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
