@@ -77,7 +77,7 @@ const T = {
 
     'next.label':      'Próximo Evento',
     'next.status':     'PRELIMINARES EN CURSO',
-    'next.title':      'Mundialito Colegial 2025',
+    'next.title':      'Mundialito Colegial 2026',
     'next.desc':       'Más de 56 institutos compiten por clasificar al gran evento en San Pedro Sula. ¡Ya iniciaron las preliminares!',
     'next.loc.label':  'Sede',
     'next.loc':        'San Pedro Sula',
@@ -223,7 +223,7 @@ const T = {
 
     'next.label':      'Upcoming Event',
     'next.status':     'PRELIMINARIES UNDERWAY',
-    'next.title':      'Mundialito Colegial 2025',
+    'next.title':      'Mundialito Colegial 2026',
     'next.desc':       'Over 56 schools compete to qualify for the grand event in San Pedro Sula. Preliminaries have already started!',
     'next.loc.label':  'Location',
     'next.loc':        'San Pedro Sula',
@@ -1214,7 +1214,7 @@ function openEventModal(eventId) {
 }
 
 /* ============================================
-   COUNTDOWN — Mundialito Colegial 2025
+   COUNTDOWN — Mundialito Colegial 2026
    ============================================ */
 function initCountdown() {
   const target = new Date('2026-06-02T00:00:00').getTime();
