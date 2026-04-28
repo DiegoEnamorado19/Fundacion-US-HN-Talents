@@ -748,7 +748,7 @@ ul { list-style: none; }
 .ev-card[data-event="e5"] { background-image: linear-gradient(rgba(8,18,34,0.68), rgba(8,18,34,0.80)), url('assets/fotos/eventos/e5/1.jpg'); }
 .ev-card[data-event="e6"] { background-image: linear-gradient(rgba(8,18,34,0.68), rgba(8,18,34,0.80)), url('assets/fotos/eventos/e6/1.jpg'); }
 .ev-card[data-event="e7"] { background-image: linear-gradient(rgba(8,18,34,0.68), rgba(8,18,34,0.80)), url('assets/fotos/eventos/e2/1.jpg'); }
-.ev-card[data-event="e8"] { background-image: linear-gradient(rgba(8,18,34,0.68), rgba(8,18,34,0.80)), url('assets/fotos/eventos/e8/1.jpg'); }
+.ev-card[data-event="e8"] { background-image: linear-gradient(rgba(8,18,34,0.68), rgba(8,18,34,0.80)), url('assets/fotos/eventos/e5/3.jpg'); }
 /* Text colors for dark-background cards */
 .ev-card[data-event] h3            { color: #fff; }
 .ev-card[data-event] .ev-card__badge { background: rgba(255,255,255,0.14); color: rgba(255,255,255,0.75); }
@@ -1368,27 +1368,27 @@ ul { list-style: none; }
 }
 .gallery-card__thumb--1 {
   background-color: #1A3A6E;
-  background-image: linear-gradient(rgba(10,22,40,0.35), rgba(10,22,40,0.55)), url('assets/fotos/galeria/Galeria1.jpg');
+  background-image: linear-gradient(rgba(10,22,40,0.35), rgba(10,22,40,0.55)), url('assets/fotos/eventos/e8/1.jpg');
   background-size: cover; background-position: center;
 }
 .gallery-card__thumb--2 {
   background-color: #00433A;
-  background-image: linear-gradient(rgba(0,67,58,0.35), rgba(0,67,58,0.55)), url('assets/fotos/galeria/Galeria2.jpg');
+  background-image: linear-gradient(rgba(0,67,58,0.35), rgba(0,67,58,0.55)), url('assets/fotos/eventos/e5/1.jpg');
   background-size: cover; background-position: center;
 }
 .gallery-card__thumb--3 {
   background-color: #3D0000;
-  background-image: linear-gradient(rgba(61,0,0,0.35), rgba(61,0,0,0.55)), url('assets/fotos/galeria/Galeria3.jpg');
+  background-image: linear-gradient(rgba(61,0,0,0.35), rgba(61,0,0,0.55)), url('assets/fotos/eventos/e6/1.jpg');
   background-size: cover; background-position: center;
 }
 .gallery-card__thumb--4 {
-  background-color: #2A1800;
-  background-image: linear-gradient(rgba(42,24,0,0.35), rgba(42,24,0,0.55)), url('assets/fotos/galeria/Galeria4.jpg');
+  background-color: #002A12;
+  background-image: linear-gradient(rgba(0,42,18,0.35), rgba(0,42,18,0.55)), url('assets/fotos/eventos/e3/1.jpg');
   background-size: cover; background-position: center;
 }
 .gallery-card__thumb--5 {
   background-color: #0A1628;
-  background-image: linear-gradient(rgba(10,22,40,0.35), rgba(10,22,40,0.55)), url('assets/fotos/galeria/Galeria5.jpg');
+  background-image: linear-gradient(rgba(10,22,40,0.35), rgba(10,22,40,0.55)), url('assets/fotos/eventos/e6/2.jpg');
   background-size: cover; background-position: center;
 }
 .gallery-card__overlay {
@@ -1619,8 +1619,8 @@ ul { list-style: none; }
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 28px;
-  min-width: 220px;
+  gap: 20px;
+  min-width: 280px;
 }
 .next-event__details {
   display: flex;
@@ -1679,6 +1679,83 @@ ul { list-style: none; }
     min-width: 140px;
   }
 }
+
+/* Countdown */
+.next-event__countdown {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 22px 0 18px;
+}
+.countdown__unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,179,0,0.25);
+  border-radius: 8px;
+  padding: 10px 14px;
+  min-width: 56px;
+}
+.countdown__val {
+  font-family: 'Anton', sans-serif;
+  font-size: 30px;
+  color: var(--gold);
+  line-height: 1;
+}
+.countdown__lbl {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  margin-top: 4px;
+}
+.countdown__sep {
+  font-family: 'Anton', sans-serif;
+  font-size: 26px;
+  color: var(--gold);
+  opacity: 0.45;
+  margin-bottom: 16px;
+  line-height: 1;
+}
+
+/* Chips */
+.next-event__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+.next-event__chip {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.07);
+  color: rgba(255,255,255,0.6);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+.next-event__chip--green {
+  background: rgba(34,197,94,0.12);
+  color: #4ade80;
+  border-color: rgba(34,197,94,0.28);
+}
+
+/* Event photo panel inside .next-event__right */
+.next-event__photo {
+  width: 100%;
+  aspect-ratio: 16/10;
+  border-radius: 10px;
+  background: url('assets/fotos/eventos/e3/2.jpg') center/cover no-repeat;
+  border: 1px solid rgba(255,179,0,0.18);
+  flex-shrink: 0;
+}
+
+/* Gallery card that opens a modal instead of linking */
+.gallery-card[data-open-event] { cursor: pointer; }
 
 /* ============================================
    EVENT CARDS — CTA BUTTON

@@ -76,15 +76,23 @@ const T = {
     'ev.e8.badge': 'Torneo',    'ev.e8.title': 'Torneo Talentos 2024','ev.e8.detail': 'Cat. 2005-2006 · 2010-2011',        'ev.e8.loc': 'Honduras',       'ev.e8.desc': 'Torneo Talentos Honduras 2024. Competencia entre academias y selecciones por categorías de edad.',
 
     'next.label':      'Próximo Evento',
-    'next.status':     'INSCRIPCIONES ABIERTAS',
-    'next.title':      'Torneo Elite #6',
-    'next.desc':       'La sexta edición de nuestro torneo más competitivo. Categorías 2007/2008 y 2009/2010. ¡No te quedes fuera!',
+    'next.status':     'PRELIMINARES EN CURSO',
+    'next.title':      'Mundialito Colegial 2025',
+    'next.desc':       'Más de 56 institutos compiten por clasificar al gran evento en San Pedro Sula. ¡Ya iniciaron las preliminares!',
     'next.loc.label':  'Sede',
-    'next.loc':        'Honduras',
-    'next.cat.label':  'Categorías',
-    'next.cat':        '2007/2008 · 2009/2010',
+    'next.loc':        'San Pedro Sula',
+    'next.cat.label':  'Categoría',
+    'next.cat':        'U17 · 2009/2010',
+    'next.wa.label':   'Inscripciones',
+    'next.free':       'TOTALMENTE GRATIS',
+    'next.institutes': '56+ Institutos',
+    'next.cd.days':    'días',
+    'next.cd.hours':   'hrs',
+    'next.cd.mins':    'min',
+    'next.cd.secs':    'seg',
     'next.cta':        'Quiero Participar',
     'next.info':       'Ver todos los eventos',
+    'media.champs.hl': 'Final Highlights — La Champions',
 
     'stories.label': 'Historias',
     'stories.title': 'Más allá de los titulares,<br><em>cada niño tiene un sueño</em>',
@@ -214,15 +222,23 @@ const T = {
     'ev.e8.badge': 'Tournament', 'ev.e8.title': 'Talentos Tournament 2024','ev.e8.detail': 'Cat. 2005-2006 · 2010-2011',      'ev.e8.loc': 'Honduras',       'ev.e8.desc': 'Talentos Honduras Tournament 2024. Competition between academies and selections by age category.',
 
     'next.label':      'Upcoming Event',
-    'next.status':     'REGISTRATION OPEN',
-    'next.title':      'Elite Tournament #6',
-    'next.desc':       'The sixth edition of our most competitive tournament. Categories 2007/2008 and 2009/2010. Don\'t miss out!',
+    'next.status':     'PRELIMINARIES UNDERWAY',
+    'next.title':      'Mundialito Colegial 2025',
+    'next.desc':       'Over 56 schools compete to qualify for the grand event in San Pedro Sula. Preliminaries have already started!',
     'next.loc.label':  'Location',
-    'next.loc':        'Honduras',
-    'next.cat.label':  'Categories',
-    'next.cat':        '2007/2008 · 2009/2010',
+    'next.loc':        'San Pedro Sula',
+    'next.cat.label':  'Category',
+    'next.cat':        'U17 · 2009/2010',
+    'next.wa.label':   'Registration',
+    'next.free':       'COMPLETELY FREE',
+    'next.institutes': '56+ Schools',
+    'next.cd.days':    'days',
+    'next.cd.hours':   'hrs',
+    'next.cd.mins':    'min',
+    'next.cd.secs':    'sec',
     'next.cta':        'I Want to Participate',
     'next.info':       'View all events',
+    'media.champs.hl': 'Final Highlights — La Champions',
 
     'stories.label': 'Stories',
     'stories.title': 'Beyond the headlines,<br><em>every child has a dream</em>',
@@ -1197,6 +1213,47 @@ function openEventModal(eventId) {
   requestAnimationFrame(() => modal.classList.add('active'));
 }
 
+/* ============================================
+   COUNTDOWN — Mundialito Colegial 2025
+   ============================================ */
+function initCountdown() {
+  const target = new Date('2025-06-02T00:00:00').getTime();
+  const dEl = document.getElementById('cd-days');
+  const hEl = document.getElementById('cd-hours');
+  const mEl = document.getElementById('cd-mins');
+  const sEl = document.getElementById('cd-secs');
+  if (!dEl) return;
+
+  const pad = n => String(Math.max(0, n)).padStart(2, '0');
+
+  const tick = () => {
+    const diff = target - Date.now();
+    if (diff <= 0) {
+      dEl.textContent = hEl.textContent = mEl.textContent = sEl.textContent = '00';
+      return;
+    }
+    dEl.textContent = pad(Math.floor(diff / 86400000));
+    hEl.textContent = pad(Math.floor((diff % 86400000) / 3600000));
+    mEl.textContent = pad(Math.floor((diff % 3600000) / 60000));
+    sEl.textContent = pad(Math.floor((diff % 60000) / 1000));
+  };
+
+  tick();
+  setInterval(tick, 1000);
+}
+
+/* ============================================
+   GALLERY CARDS — open event modal
+   ============================================ */
+function initGalleryCardModals() {
+  document.querySelectorAll('.gallery-card[data-open-event]').forEach(card => {
+    card.addEventListener('click', () => openEventModal(card.dataset.openEvent));
+    card.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openEventModal(card.dataset.openEvent); }
+    });
+  });
+}
+
 function initEventModals() {
   const modal   = document.getElementById('evModal');
   const overlay = document.getElementById('evModalOverlay');
@@ -1542,6 +1599,8 @@ document.addEventListener('DOMContentLoaded', () => {
   loadLatestYouTubeVideos();
   initScrollExtras();
   initEventModals();
+  initGalleryCardModals();
+  initCountdown();
   initChampions();
 
   const heroBall = document.querySelector('.hero__ball');
