@@ -85,7 +85,7 @@ const T = {
     'next.cat':        'U17 · 2009/2010',
     'next.wa.label':   'Inscripciones',
     'next.free':       'TOTALMENTE GRATIS',
-    'next.institutes': '56+ Institutos',
+    'next.institutes': '+56 Institutos',
     'next.cd.days':    'días',
     'next.cd.hours':   'hrs',
     'next.cd.mins':    'min',
@@ -231,7 +231,7 @@ const T = {
     'next.cat':        'U17 · 2009/2010',
     'next.wa.label':   'Registration',
     'next.free':       'COMPLETELY FREE',
-    'next.institutes': '56+ Schools',
+    'next.institutes': '+56 Schools',
     'next.cd.days':    'days',
     'next.cd.hours':   'hrs',
     'next.cd.mins':    'min',
@@ -663,12 +663,12 @@ function initReveal() {
 /* ============================================
    STATS COUNTER
    ============================================ */
-function countUp(el, target, suffix, duration) {
+function countUp(el, target, prefix, suffix, duration) {
   const start = performance.now();
   (function step(now) {
     const p = Math.min((now - start) / duration, 1);
     const eased = 1 - Math.pow(1 - p, 3); // ease-out cubic
-    el.textContent = Math.round(eased * target) + suffix;
+    el.textContent = prefix + Math.round(eased * target) + suffix;
     if (p < 1) requestAnimationFrame(step);
   })(start);
 }
@@ -681,7 +681,7 @@ function initCounters() {
     if (entries[0].isIntersecting && !countersTriggered) {
       countersTriggered = true;
       document.querySelectorAll('.stat__num[data-target]').forEach(el => {
-        countUp(el, +el.dataset.target, el.dataset.suffix || '', 2200);
+        countUp(el, +el.dataset.target, el.dataset.prefix || '', el.dataset.suffix || '', 2200);
       });
     }
   }, { threshold: 0.5 });
@@ -1217,7 +1217,7 @@ function openEventModal(eventId) {
    COUNTDOWN — Mundialito Colegial 2025
    ============================================ */
 function initCountdown() {
-  const target = new Date('2025-06-02T00:00:00').getTime();
+  const target = new Date('2026-06-02T00:00:00').getTime();
   const dEl = document.getElementById('cd-days');
   const hEl = document.getElementById('cd-hours');
   const mEl = document.getElementById('cd-mins');
