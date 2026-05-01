@@ -1,6 +1,29 @@
 'use strict';
 
 /* ============================================
+   SCROLL LOCK — iOS-safe body scroll prevention
+   ============================================ */
+let _scrollLockCount = 0;
+let _scrollLockY = 0;
+function lockScroll() {
+  if (_scrollLockCount++ > 0) return;
+  _scrollLockY = window.scrollY;
+  document.body.style.overflow = 'hidden';
+  document.body.style.position = 'fixed';
+  document.body.style.top = `-${_scrollLockY}px`;
+  document.body.style.width = '100%';
+}
+function unlockScroll() {
+  if (--_scrollLockCount > 0) return;
+  _scrollLockCount = 0;
+  document.body.style.overflow = '';
+  document.body.style.position = '';
+  document.body.style.top = '';
+  document.body.style.width = '';
+  window.scrollTo(0, _scrollLockY);
+}
+
+/* ============================================
    PAGE LOADER — hides FOUC while fonts load
    ============================================ */
 (function () {
@@ -809,7 +832,7 @@ function initMobileMenu() {
     menu.classList.remove('active');
     overlay?.classList.remove('active');
     burger.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
+    unlockScroll();
   };
 
   burger.addEventListener('click', () => {
@@ -821,7 +844,7 @@ function initMobileMenu() {
       menu.classList.add('active');
       overlay?.classList.add('active');
       burger.setAttribute('aria-expanded', 'true');
-      document.body.style.overflow = 'hidden';
+      lockScroll();
     }
   });
 
@@ -1414,7 +1437,7 @@ function openEventModal(eventId) {
   });
 
   modal.hidden = false;
-  document.body.style.overflow = 'hidden';
+  lockScroll();
   requestAnimationFrame(() => modal.classList.add('active'));
 }
 
@@ -1514,7 +1537,7 @@ function openStoryModal(storyId) {
   });
 
   modal.hidden = false;
-  document.body.style.overflow = 'hidden';
+  lockScroll();
   requestAnimationFrame(() => requestAnimationFrame(() => modal.classList.add('active')));
 }
 
@@ -1539,7 +1562,7 @@ function initStoryModals() {
     panel.style.transform  = '';
     panel.style.opacity    = '';
     modal.classList.remove('active');
-    setTimeout(() => { modal.hidden = true; document.body.style.overflow = ''; }, 360);
+    setTimeout(() => { modal.hidden = true; unlockScroll(); }, 360);
   };
 
   document.getElementById('stModalClose').addEventListener('click', closeModal);
@@ -1598,7 +1621,7 @@ function initEventModals() {
 
   const closeModal = () => {
     modal.classList.remove('active');
-    setTimeout(() => { modal.hidden = true; document.body.style.overflow = ''; }, 360);
+    setTimeout(() => { modal.hidden = true; unlockScroll(); }, 360);
   };
 
   closeBtn.addEventListener('click', closeModal);
@@ -1938,7 +1961,7 @@ function initLightbox() {
   window.openLightbox = (src) => {
     img.src = src;
     overlay.hidden = false;
-    document.body.style.overflow = 'hidden';
+    lockScroll();
     hint.textContent = lang === 'es'
       ? 'Doble clic · Scroll o pellizca para hacer zoom · ESC para cerrar'
       : 'Double click · Scroll or pinch to zoom · ESC to close';
@@ -1951,7 +1974,7 @@ function initLightbox() {
     setTimeout(() => {
       overlay.hidden = true;
       img.src = '';
-      document.body.style.overflow = '';
+      unlockScroll();
       reset(false);
     }, 260);
   };

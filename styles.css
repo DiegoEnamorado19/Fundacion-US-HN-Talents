@@ -2085,7 +2085,7 @@ ul { list-style: none; }
 
 @media (max-width: 600px) {
   .ev-modal { padding: 0; align-items: flex-end; }
-  .ev-modal__panel { border-radius: 20px 20px 0 0; max-height: 92vh; }
+  .ev-modal__panel { border-radius: 20px 20px 0 0; max-height: 92vh; min-height: 72vh; }
   .ev-modal__header { padding: 28px 22px 22px; }
   .ev-modal__body { padding: 24px 22px 36px; }
   .ev-modal__vgrid { grid-template-columns: 1fr; }
@@ -2198,7 +2198,7 @@ ul { list-style: none; }
 .st-modal__detail strong { color: rgba(255,255,255,0.85); font-weight: 600; }
 @media (max-width: 600px) {
   .st-modal { padding: 0; align-items: flex-end; }
-  .st-modal__panel { border-radius: 20px 20px 0 0; max-height: 92vh; }
+  .st-modal__panel { border-radius: 20px 20px 0 0; max-height: 92vh; min-height: 72vh; }
   .st-modal__hero-content { padding: 20px; }
   .st-modal__body { padding: 24px 20px 36px; }
   .st-modal__title { font-size: 20px; }
