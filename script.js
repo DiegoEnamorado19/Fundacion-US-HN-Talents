@@ -73,7 +73,14 @@ const T = {
     'ev.e5.badge': 'Torneo',    'ev.e5.title': 'Torneo Talentos HN',   'ev.e5.detail': 'Equipos campeones',                'ev.e5.loc': 'Honduras',       'ev.e5.desc': 'Los mejores equipos del país compiten por el máximo honor en el fútbol juvenil hondureño.',
     'ev.e6.badge': 'Campamento','ev.e6.title': 'Campamento Sub 16',    'ev.e6.detail': 'Desarrollo intensivo',             'ev.e6.loc': 'Honduras',       'ev.e6.desc': 'Programa especializado para la categoría sub-16 con enfoque en técnica y formación personal.',
     'ev.e7.badge': 'Torneo',    'ev.e7.title': 'Mundialito Colegial',  'ev.e7.detail': '24 equipos colegiales',            'ev.e7.loc': 'San Pedro Sula', 'ev.e7.desc': 'Primera edición del Mundialito Colegial, reuniendo a los mejores equipos estudiantiles de Honduras.',
-    'ev.e8.badge': 'Torneo',    'ev.e8.title': 'Torneo Talentos 2024','ev.e8.detail': 'Cat. 2005-2006 · 2010-2011',        'ev.e8.loc': 'Honduras',       'ev.e8.desc': 'Torneo Talentos Honduras 2024. Competencia entre academias y selecciones por categorías de edad.',
+    'ev.e8.badge': 'Torneo',    'ev.e8.title': 'Torneo Talentos 2024',    'ev.e8.detail': 'Cat. 2005-2006 · 2010-2011',    'ev.e8.loc': 'Honduras',             'ev.e8.desc': 'Torneo Talentos Honduras 2024. Competencia entre academias y selecciones por categorías de edad.',
+    'ev.e9.badge': 'Torneo',    'ev.e9.title': 'Torneo Villanueva 2025',  'ev.e9.detail': 'Fútbol juvenil',                'ev.e9.loc': 'Villanueva, Cortés',    'ev.e9.desc': 'Torneo de fútbol juvenil en Villanueva organizado por US-HN Talents.',
+    'ev.e10.badge': 'Torneo',   'ev.e10.title': 'Torneo Siguatepeque 2025','ev.e10.detail': 'Fútbol juvenil',               'ev.e10.loc': 'Siguatepeque',          'ev.e10.desc': 'Siguatepeque fue el escenario de un evento dedicado a la juventud hondureña impulsado a través del fútbol.',
+    'ev.e11.badge': 'Torneo',   'ev.e11.title': 'Torneo Cofradía 2025',   'ev.e11.detail': 'Fútbol juvenil',               'ev.e11.loc': 'Cofradía, Cortés',      'ev.e11.desc': 'La competencia, la pasión y el talento unidos en un solo lugar. ¡El fútbol juvenil en su máxima expresión!',
+    'ev.e12.badge': 'Torneo',   'ev.e12.title': 'Torneo La Lima 2025',    'ev.e12.detail': 'U17 · U19',                    'ev.e12.loc': 'La Lima, Cortés',       'ev.e12.desc': 'El Complejo Deportivo Chulavista fue el escenario con los mejores jóvenes futbolistas en categorías U17 y U19.',
+    'ev.e13.badge': 'Torneo',   'ev.e13.title': 'Torneo Santa Rosa 2025', 'ev.e13.detail': 'Fútbol juvenil',               'ev.e13.loc': 'Santa Rosa de Copán',   'ev.e13.desc': 'El legendario Estadio Copán Galel se convirtió en el epicentro del talento joven hondureño.',
+    'ev.e14.badge': 'Torneo',   'ev.e14.title': 'Mundialito Colegial 2025','ev.e14.detail': 'Institutos de Honduras',       'ev.e14.loc': 'La Lima, Cortés',       'ev.e14.desc': 'Gran fiesta deportiva del año. La Lima fue la ciudad sede con los mejores institutos de Honduras.',
+    'ev.e15.badge': 'Torneo',   'ev.e15.title': 'Torneo Elite 2025',      'ev.e15.detail': 'U17 · U19',                    'ev.e15.loc': 'Honduras',              'ev.e15.desc': 'El evento de talento juvenil más esperado, con campeones de todos los torneos y los mejores del país.',
 
     'next.label':      'Próximo Evento',
     'next.status':     'PRELIMINARES EN CURSO',
@@ -219,7 +226,14 @@ const T = {
     'ev.e5.badge': 'Tournament', 'ev.e5.title': 'Talentos HN Tournament','ev.e5.detail': 'Champion teams',                    'ev.e5.loc': 'Honduras',       'ev.e5.desc': 'The best teams in the country compete for the ultimate honor in Honduran youth soccer.',
     'ev.e6.badge': 'Camp',       'ev.e6.title': 'Sub-16 Camp',           'ev.e6.detail': 'Intensive development',             'ev.e6.loc': 'Honduras',       'ev.e6.desc': 'A specialized program for the sub-16 category focused on technique and personal growth.',
     'ev.e7.badge': 'Tournament', 'ev.e7.title': 'Mundialito Colegial',  'ev.e7.detail': '24 school teams',                  'ev.e7.loc': 'San Pedro Sula', 'ev.e7.desc': 'First edition of the Mundialito Colegial, bringing together the best student teams in Honduras.',
-    'ev.e8.badge': 'Tournament', 'ev.e8.title': 'Talentos Tournament 2024','ev.e8.detail': 'Cat. 2005-2006 · 2010-2011',      'ev.e8.loc': 'Honduras',       'ev.e8.desc': 'Talentos Honduras Tournament 2024. Competition between academies and selections by age category.',
+    'ev.e8.badge': 'Tournament',  'ev.e8.title': 'Talentos Tournament 2024',   'ev.e8.detail': 'Cat. 2005-2006 · 2010-2011',  'ev.e8.loc': 'Honduras',             'ev.e8.desc': 'Talentos Honduras Tournament 2024. Competition between academies and selections by age category.',
+    'ev.e9.badge': 'Tournament',  'ev.e9.title': 'Villanueva Tournament 2025',  'ev.e9.detail': 'Youth soccer',                'ev.e9.loc': 'Villanueva, Cortés',    'ev.e9.desc': 'Youth soccer tournament in Villanueva organized by US-HN Talents.',
+    'ev.e10.badge': 'Tournament', 'ev.e10.title': 'Siguatepeque Tournament 2025','ev.e10.detail': 'Youth soccer',               'ev.e10.loc': 'Siguatepeque',          'ev.e10.desc': 'Siguatepeque hosted a tournament dedicated to Honduran youth driven through the sport of soccer.',
+    'ev.e11.badge': 'Tournament', 'ev.e11.title': 'Cofradía Tournament 2025',   'ev.e11.detail': 'Youth soccer',               'ev.e11.loc': 'Cofradía, Cortés',      'ev.e11.desc': 'Competition, passion and talent united in one place. Youth soccer at its finest!',
+    'ev.e12.badge': 'Tournament', 'ev.e12.title': 'La Lima Tournament 2025',    'ev.e12.detail': 'U17 · U19',                  'ev.e12.loc': 'La Lima, Cortés',       'ev.e12.desc': 'Complejo Deportivo Chulavista hosted the best young players in the U17 and U19 categories.',
+    'ev.e13.badge': 'Tournament', 'ev.e13.title': 'Santa Rosa Tournament 2025', 'ev.e13.detail': 'Youth soccer',               'ev.e13.loc': 'Santa Rosa de Copán',   'ev.e13.desc': 'The legendary Estadio Copán Galel became the epicenter of Honduran youth talent.',
+    'ev.e14.badge': 'Tournament', 'ev.e14.title': 'Mundialito Colegial 2025',   'ev.e14.detail': 'Honduran institutes',        'ev.e14.loc': 'La Lima, Cortés',       'ev.e14.desc': 'The biggest sports celebration of the year. La Lima hosted the best student institutes of Honduras.',
+    'ev.e15.badge': 'Tournament', 'ev.e15.title': 'Elite Tournament 2025',      'ev.e15.detail': 'U17 · U19',                  'ev.e15.loc': 'Honduras',              'ev.e15.desc': 'The most anticipated youth talent event, featuring champions from all tournaments and the best in the country.',
 
     'next.label':      'Upcoming Event',
     'next.status':     'PRELIMINARIES UNDERWAY',
@@ -328,7 +342,7 @@ const EVENTS_DATA = {
     results: null,
     pixieset: 'https://us-hntalents.pixieset.com/sextotorneoeliteushn/',
     photos: ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg'],
-    photoPath: 'assets/fotos/eventos/e6/',
+    photoPath: 'assets/fotos/eventos/e6-campamento-sub16-2023/',
     videos: [],
     videoGroups: [
       { phase_es: 'Partidos de Clasificación', phase_en: 'Qualifying Matches', matches: [
@@ -376,7 +390,7 @@ const EVENTS_DATA = {
     results: [{ first: 'Sel. Est. SPS', second: 'Águilas de Progreso' }],
     pixieset: 'https://us-hntalents.pixieset.com/torneopromesaspuertocortes/',
     photos: ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg'],
-    photoPath: 'assets/fotos/eventos/e8/',
+    photoPath: 'assets/fotos/eventos/e8-campamento-talentos-feb-2024/',
     videos: [],
     videoGroups: [
       { phase_es: 'Fase de Grupos', phase_en: 'Group Stage', matches: [
@@ -408,7 +422,7 @@ const EVENTS_DATA = {
     results: null,
     pixieset: null,
     photos: ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg'],
-    photoPath: 'assets/fotos/eventos/e2/',
+    photoPath: 'assets/fotos/eventos/e2-mundialito-colegial-2024/',
     videos: [],
     videoGroups: [
       { phase_es: 'Resumen', phase_en: 'Summary', matches: [
@@ -436,7 +450,7 @@ const EVENTS_DATA = {
     results: [{ first: 'Selección Colegial', second: 'Platense Jr' }],
     pixieset: 'https://us-hntalents.pixieset.com/torneo-talentos-honduras/',
     photos: ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg'],
-    photoPath: 'assets/fotos/eventos/e4/',
+    photoPath: 'assets/fotos/eventos/e4-campamento-u14-u16-2023/',
     videos: [],
     videoGroups: [
       { phase_es: 'Partidos de Clasificación', phase_en: 'Qualifying Matches', matches: [
@@ -462,7 +476,7 @@ const EVENTS_DATA = {
     results: [{ first: 'Platense Jr', second: 'Inmude' }],
     pixieset: null,
     photos: ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg'],
-    photoPath: 'assets/fotos/eventos/e1/',
+    photoPath: 'assets/fotos/eventos/e1-torneo-elite-6-2024/',
     videos: [],
     videoGroups: [
       { phase_es: 'Partidos de Clasificación', phase_en: 'Qualifying Matches', matches: [
@@ -490,7 +504,7 @@ const EVENTS_DATA = {
     results: [{ first: 'Inst. Oficial Villanueva', second: 'Union y Esfuerzo' }],
     pixieset: null,
     photos: ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg'],
-    photoPath: 'assets/fotos/eventos/e3/',
+    photoPath: 'assets/fotos/eventos/e3-torneo-promesas-2024/',
     videos: [],
     videoGroups: [
       { phase_es: 'Partidos de Clasificación', phase_en: 'Qualifying Matches', matches: [
@@ -521,7 +535,7 @@ const EVENTS_DATA = {
     ],
     pixieset: 'https://us-hntalents.pixieset.com/campamentofebrero2024/',
     photos: ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg'],
-    photoPath: 'assets/fotos/eventos/e5/',
+    photoPath: 'assets/fotos/eventos/e5-torneo-talentos-2023/',
     videos: [],
     videoGroups: [
       { phase_es: 'Partidos de Clasificación', phase_en: 'Qualifying Matches', matches: [
@@ -540,7 +554,200 @@ const EVENTS_DATA = {
         { id: 'jf5UMT9RaHY', label: 'Sel. Colegial vs Aguilas' }
       ]}
     ]
+  },
+  e9: {
+    badge_es: 'Torneo', badge_en: 'Tournament',
+    name_es: 'Torneo Villanueva 2025', name_en: 'Villanueva Tournament 2025',
+    year: 2025, location: 'Villanueva, Cortés', categories: 'Fútbol juvenil',
+    desc_es: 'Torneo de fútbol juvenil organizado por US-HN Talents en Villanueva, Cortés. Un evento que reunió a jóvenes talentos de la región para competir y demostrar sus habilidades.',
+    desc_en: 'Youth soccer tournament organized by US-HN Talents in Villanueva, Cortés. An event that brought together young talents from the region to compete and showcase their skills.',
+    teams: [], results: null, pixieset: null,
+    photos: ['1.jpg'],
+    photoPath: 'assets/fotos/eventos/e9-torneo-villanueva-2025/',
+    videos: [], videoGroups: []
+  },
+  e10: {
+    badge_es: 'Torneo', badge_en: 'Tournament',
+    name_es: 'Torneo Siguatepeque 2025', name_en: 'Siguatepeque Tournament 2025',
+    year: 2025, location: 'Siguatepeque', categories: 'Fútbol juvenil',
+    desc_es: 'Este 22 de marzo, Siguatepeque fue el escenario de un evento dedicado a la juventud hondureña, impulsado a través del fútbol por US-HN Talents.',
+    desc_en: 'On March 22nd, Siguatepeque became the stage for an event dedicated to Honduran youth, driven through soccer by US-HN Talents.',
+    teams: [], results: null, pixieset: null,
+    photos: ['1.jpg'],
+    photoPath: 'assets/fotos/eventos/e10-torneo-siguatepeque-2025/',
+    videos: [], videoGroups: []
+  },
+  e11: {
+    badge_es: 'Torneo', badge_en: 'Tournament',
+    name_es: 'Torneo Cofradía 2025', name_en: 'Cofradía Tournament 2025',
+    year: 2025, location: 'Cofradía, Cortés', categories: 'Fútbol juvenil',
+    desc_es: 'Este 27 de abril fue el momento de ser parte de algo épico. La competencia, la pasión y el talento se unieron en un solo lugar en Cofradía, Cortés.',
+    desc_en: 'April 27th was the moment to be part of something epic. Competition, passion and talent came together in one place in Cofradía, Cortés.',
+    teams: [], results: null, pixieset: null,
+    photos: ['1.jpg'],
+    photoPath: 'assets/fotos/eventos/e11-torneo-cofradia-2025/',
+    videos: [], videoGroups: []
+  },
+  e12: {
+    badge_es: 'Torneo', badge_en: 'Tournament',
+    name_es: 'Torneo La Lima 2025', name_en: 'La Lima Tournament 2025',
+    year: 2025, location: 'La Lima, Cortés', categories: 'U17 · U19',
+    desc_es: 'El 7 y 8 de junio, el Complejo Deportivo Chulavista fue el escenario de pura emoción, talento y pasión con los mejores jóvenes futbolistas en las categorías U17 y U19. Un evento en conjunto con la Dirección Municipal de Deporte y la Municipalidad de La Lima, Cortés.',
+    desc_en: 'On June 7th and 8th, the Chulavista Sports Complex hosted pure excitement, talent and passion with the best young players in the U17 and U19 categories. An event in partnership with the Municipal Sports Department and the Municipality of La Lima, Cortés.',
+    teams: [], results: null, pixieset: null,
+    photos: ['1.jpg'],
+    photoPath: 'assets/fotos/eventos/e12-torneo-la-lima-2025/',
+    videos: [],
+    videoGroups: [
+      { phase_es: 'Videos', phase_en: 'Videos', matches: [
+        { id: '4sRWtkJY7Uo', label: 'Torneo La Lima 2025' }
+      ]}
+    ]
+  },
+  e13: {
+    badge_es: 'Torneo', badge_en: 'Tournament',
+    name_es: 'Torneo Santa Rosa 2025', name_en: 'Santa Rosa Tournament 2025',
+    year: 2025, location: 'Santa Rosa de Copán', categories: 'Fútbol juvenil',
+    desc_es: 'El 21 de junio, US-HN Talents transformó el legendario Estadio Copán Galel en el epicentro del talento joven. Una experiencia inolvidable para los mejores futbolistas juveniles de Honduras.',
+    desc_en: 'On June 21st, US-HN Talents transformed the legendary Estadio Copán Galel into the epicenter of young talent. An unforgettable experience for Honduras\'s best youth soccer players.',
+    teams: [], results: null, pixieset: null,
+    photos: ['1.jpg'],
+    photoPath: 'assets/fotos/eventos/e13-torneo-santa-rosa-2025/',
+    videos: [],
+    videoGroups: [
+      { phase_es: 'Videos', phase_en: 'Videos', matches: [
+        { id: 'Ipu9BiHdzq8', label: 'Torneo Santa Rosa 2025' }
+      ]}
+    ]
+  },
+  e14: {
+    badge_es: 'Torneo', badge_en: 'Tournament',
+    name_es: 'Mundialito Colegial 2025', name_en: 'Mundialito Colegial 2025',
+    year: 2025, location: 'La Lima, Cortés', categories: 'Institutos de Honduras',
+    desc_es: 'Gran fiesta deportiva del año: el Mundialito Colegial 2025. La Lima fue la ciudad sede del evento que reunió a los mejores institutos de Honduras los días 20, 21 y 22 de agosto.',
+    desc_en: 'The biggest sports celebration of the year: Mundialito Colegial 2025. La Lima hosted the event that brought together the best student institutes of Honduras on August 20th, 21st, and 22nd.',
+    teams: [], results: null,
+    pixieset: 'https://us-hntalents.pixieset.com/mundialitocolegial2025/',
+    photos: ['1.jpg'],
+    photoPath: 'assets/fotos/eventos/e14-mundialito-colegial-2025/',
+    videos: [],
+    videoGroups: [
+      { phase_es: 'Videos', phase_en: 'Videos', matches: [
+        { id: 'ymWnTsjz0_s', label: 'Mundialito Colegial 2025' }
+      ]}
+    ]
+  },
+  e15: {
+    badge_es: 'Torneo', badge_en: 'Tournament',
+    name_es: 'Torneo Elite 2025', name_en: 'Elite Tournament 2025',
+    year: 2025, location: 'Honduras', categories: 'U17 · U19',
+    desc_es: 'El evento de talento juvenil más esperado del año. US-HN Talents reunió a los campeones de todos sus torneos junto a invitados de altísimo nivel en las categorías U17 y U19, los días 1, 2 y 3 de octubre. Combinados regionales representando a diferentes partes del país.',
+    desc_en: 'The most anticipated youth talent event of the year. US-HN Talents brought together champions from all its tournaments alongside elite guests in the U17 and U19 categories, October 1st, 2nd, and 3rd. Regional combined teams representing different parts of the country.',
+    teams: [], results: null,
+    pixieset: 'https://us-hntalents.pixieset.com/torneoelite2025/',
+    photos: ['1.jpg'],
+    photoPath: 'assets/fotos/eventos/e15-torneo-elite-2025/',
+    videos: [],
+    videoGroups: [
+      { phase_es: 'Videos', phase_en: 'Videos', matches: [
+        { id: '2jobYVf6lcM', label: 'Torneo Elite 2025' }
+      ]}
+    ]
   }
+};
+
+/* ============================================
+   STORIES DATA
+   ============================================ */
+const STORIES_DATA = {
+  s1: {
+    cat:     { es: 'Comunidad',      en: 'Community' },
+    title:   { es: 'Escuela Nueva Generación', en: 'Nueva Generación School' },
+    heroMod: 'st-modal__hero--s1',
+    quote:   {
+      es: '"¡A seguir trabajando duro, muchachos, tanto en el deporte como en la educación! 💪👏⚽"',
+      en: '"Keep working hard, boys, both in sports and in education! 💪👏⚽"',
+    },
+    quoteBy: { es: 'US-HN Talents', en: 'US-HN Talents' },
+    photos:   ['H1.png', 'H2.png', 'H3.png', 'H4.png', 'H5.png'],
+    photoPath: 'assets/fotos/historias/',
+    body: {
+      es: '<p class="st-modal__text">US-HN Talents y Copán Maya S.L. visitan la Escuela de Fútbol Nueva Generación en Chivana, Omoa, llevando una pequeña ayuda para el desarrollo futbolístico de estos jóvenes talentos.</p><p class="st-modal__text">La escuela es dirigida por el Profe René Wandique, quien anteriormente estuvo al frente de la selección de Omoa en el torneo US-HN Talents realizado en Puerto Cortés.</p><p class="st-modal__text">El impacto de iniciativas como esta va más allá del campo de juego: fortalece el tejido comunitario, motiva a los jóvenes a mantenerse alejados de situaciones de riesgo y demuestra que el talento hondureño existe en cada rincón del país, solo necesita ser descubierto y apoyado.</p>',
+      en: '<p class="st-modal__text">US-HN Talents and Copán Maya S.L. visit the Nueva Generación Football School in Chivana, Omoa, bringing a helping hand to support the soccer development of these young talents.</p><p class="st-modal__text">The school is led by Coach René Wandique, who previously guided the Omoa team in the US-HN Talents tournament held in Puerto Cortés.</p><p class="st-modal__text">The impact of initiatives like this goes beyond the playing field: it strengthens community ties, motivates young people to stay away from risky situations, and proves that Honduran talent exists in every corner of the country — it just needs to be discovered and supported.</p>',
+    },
+    details: {
+      es: [
+        { label: 'Ubicación',  value: 'Chivana, Omoa, Cortés' },
+        { label: 'Aliado',     value: 'Copán Maya S.L.' },
+        { label: 'Entrenador', value: 'René Wandique' },
+      ],
+      en: [
+        { label: 'Location', value: 'Chivana, Omoa, Cortés' },
+        { label: 'Partner',  value: 'Copán Maya S.L.' },
+        { label: 'Coach',    value: 'René Wandique' },
+      ],
+    },
+  },
+  s2: {
+    cat:     { es: 'Impacto Social', en: 'Social Impact' },
+    title:   { es: 'Jóvenes de Nuevo Horizontes', en: 'Youth from Nuevo Horizontes' },
+    heroMod: 'st-modal__hero--s2',
+    videoId:   '1066442594',
+    videoHash: '089de30747',
+    quote:   {
+      es: '"Cuando le damos una oportunidad a un niño, le cambiamos el destino a toda su familia."',
+      en: '"When we give a child a chance, we change the destiny of their entire family."',
+    },
+    quoteBy: {
+      es: 'Director de Programas, US-HN Talents',
+      en: 'Programs Director, US-HN Talents',
+    },
+    body: {
+      es: '<p class="st-modal__text">Nuevo Horizontes es una comunidad urbana de San Pedro Sula caracterizada por sus limitados recursos económicos y las pocas oportunidades deportivas para sus jóvenes. Con el apoyo de US-HN Talents, decenas de jugadores de esta comunidad han encontrado en el fútbol un espacio seguro, estructurado y lleno de esperanza.</p><p class="st-modal__text">A través del programa de inclusión deportiva, los jóvenes de Nuevo Horizontes participan en entrenamientos semanales, reciben equipamiento deportivo y tienen acceso a los torneos organizados por la fundación. Varios de ellos han destacado en competencias regionales, demostrando que el talento no tiene código postal.</p><p class="st-modal__text">Más allá del fútbol, el programa incorpora talleres de valores, trabajo en equipo y orientación vocacional. Los resultados hablan por sí solos: mayor asistencia escolar, mejores calificaciones y familias que ven en la fundación un aliado real para el futuro de sus hijos.</p>',
+      en: '<p class="st-modal__text">Nuevo Horizontes is an urban community in San Pedro Sula characterized by limited economic resources and few sporting opportunities for its youth. With the support of US-HN Talents, dozens of players from this community have found in soccer a safe, structured space full of hope.</p><p class="st-modal__text">Through the sports inclusion program, young people from Nuevo Horizontes participate in weekly training sessions, receive sports equipment, and have access to tournaments organized by the foundation. Several of them have excelled in regional competitions, proving that talent has no zip code.</p><p class="st-modal__text">Beyond soccer, the program incorporates workshops on values, teamwork, and vocational guidance. The results speak for themselves: higher school attendance, better grades, and families who see the foundation as a genuine ally for their children\'s future.</p>',
+    },
+    details: {
+      es: [
+        { label: 'Ubicación',     value: 'San Pedro Sula, Honduras' },
+        { label: 'Programa',      value: 'Inclusión Deportiva' },
+        { label: 'Participantes', value: 'Más de 60 jóvenes activos' },
+      ],
+      en: [
+        { label: 'Location',     value: 'San Pedro Sula, Honduras' },
+        { label: 'Program',      value: 'Sports Inclusion' },
+        { label: 'Participants', value: 'Over 60 active youth' },
+      ],
+    },
+  },
+  s3: {
+    cat:     { es: 'Transformación', en: 'Transformation' },
+    title:   { es: 'El poder del fútbol', en: 'The power of soccer' },
+    heroMod: 'st-modal__hero--s3',
+    quote:   {
+      es: '"El fútbol no fue solo un deporte. Fue el camino que me llevó a quien soy hoy."',
+      en: '"Soccer wasn\'t just a sport. It was the path that led me to who I am today."',
+    },
+    quoteBy: {
+      es: 'Ex jugador, Programa US-HN Talents',
+      en: 'Former player, US-HN Talents Program',
+    },
+    body: {
+      es: '<p class="st-modal__text">Desde sus primeros torneos, US-HN Talents ha sido testigo de transformaciones que van mucho más allá de un marcador. Jóvenes que llegaron sin saber lo que significaba la disciplina, el trabajo en equipo o la perseverancia, han salido convertidos en líderes dentro y fuera de la cancha.</p><p class="st-modal__text">Entre las historias más inspiradoras destaca la de jóvenes que, habiendo participado en los campamentos de la fundación, lograron ingresar a academias de fútbol formales, obtener becas académicas y servir como referentes positivos en sus comunidades. El fútbol fue la puerta; la fundación fue el apoyo que los ayudó a cruzarla.</p><p class="st-modal__text">Cada partido, cada entrenamiento y cada torneo es una oportunidad de escribir nuevas historias. US-HN Talents se compromete a seguir siendo ese puente entre el sueño de un niño y la realidad de un futuro mejor, porque creemos que Honduras tiene el talento para brillar ante el mundo.</p>',
+      en: '<p class="st-modal__text">Since its first tournaments, US-HN Talents has witnessed transformations that go far beyond a score. Young people who arrived without understanding what discipline, teamwork, or perseverance meant, have left transformed into leaders on and off the field.</p><p class="st-modal__text">Among the most inspiring stories are young people who, having participated in the foundation\'s camps, went on to join formal soccer academies, earn academic scholarships, and serve as positive role models in their communities. Soccer was the door; the foundation was the support that helped them walk through it.</p><p class="st-modal__text">Every match, every training session, and every tournament is an opportunity to write new stories. US-HN Talents is committed to remaining that bridge between a child\'s dream and the reality of a better future, because we believe Honduras has the talent to shine before the world.</p>',
+    },
+    details: {
+      es: [
+        { label: 'Alcance',   value: 'Todo Honduras' },
+        { label: 'Impacto',   value: '+500 jóvenes en 5 años' },
+        { label: 'Programas', value: 'Torneos, Campamentos, Becas' },
+      ],
+      en: [
+        { label: 'Reach',    value: 'All of Honduras' },
+        { label: 'Impact',   value: '+500 youth in 5 years' },
+        { label: 'Programs', value: 'Tournaments, Camps, Scholarships' },
+      ],
+    },
+  },
 };
 
 /* ============================================
@@ -1077,34 +1284,27 @@ function buildModalBody(data) {
   html += `<p class="ev-modal__desc">${isEs ? data.desc_es : data.desc_en}</p>`;
 
   // Gallery
+  html += `<div><p class="ev-modal__section-title">${isEs ? 'Galería de fotos' : 'Photo gallery'}</p>`;
   if (data.photos && data.photos.length > 0) {
-    html += `
-      <div>
-        <p class="ev-modal__section-title">${isEs ? 'Galería de fotos' : 'Photo gallery'}</p>
-        <div class="ev-modal__photo-grid">
+    html += `<div class="ev-modal__photo-grid">
           ${data.photos.map(f => `
-            <a class="ev-modal__photo-item" href="${data.photoPath}${f}" target="_blank" rel="noopener">
+            <div class="ev-modal__photo-item lb-photo">
               <img src="${data.photoPath}${f}" alt="${isEs ? data.name_es : data.name_en}" loading="lazy">
-            </a>`).join('')}
-        </div>
-      </div>`;
-  } else if (data.pixieset) {
+            </div>`).join('')}
+        </div>`;
+  }
+  if (data.pixieset) {
     html += `
-      <div>
-        <p class="ev-modal__section-title">${isEs ? 'Galería de fotos' : 'Photo gallery'}</p>
-        <a href="${data.pixieset}" target="_blank" rel="noopener" class="ev-modal__gallery-btn">
+        <a href="${data.pixieset}" target="_blank" rel="noopener" class="ev-modal__gallery-btn" style="margin-top:12px">
           <div class="ev-modal__gallery-icon">${photoSvg}</div>
           <div class="ev-modal__gallery-copy">
-            <strong>${isEs ? 'Ver galería de fotos' : 'View photo gallery'}</strong>
+            <strong>${isEs ? 'Ver galería completa' : 'View full gallery'}</strong>
             <span>Pixieset &nbsp;·&nbsp; ${isEs ? data.name_es : data.name_en}</span>
           </div>
           <span class="ev-modal__gallery-arrow">→</span>
-        </a>
-      </div>`;
-  } else {
+        </a>`;
+  } else if (!data.photos || data.photos.length === 0) {
     html += `
-      <div>
-        <p class="ev-modal__section-title">${isEs ? 'Galería de fotos' : 'Photo gallery'}</p>
         <a href="https://www.instagram.com/us_hn_talents/" target="_blank" rel="noopener" class="ev-modal__gallery-btn ev-modal__gallery-btn--ig">
           <div class="ev-modal__gallery-icon">${igSvg}</div>
           <div class="ev-modal__gallery-copy">
@@ -1112,9 +1312,9 @@ function buildModalBody(data) {
             <span>@us_hn_talents</span>
           </div>
           <span class="ev-modal__gallery-arrow">→</span>
-        </a>
-      </div>`;
+        </a>`;
   }
+  html += `</div>`;
 
   // Teams
   if (data.teams && data.teams.length > 0) {
@@ -1207,6 +1407,11 @@ function openEventModal(eventId) {
     <span class="ev-modal__info-item">· ${data.categories}</span>`;
 
   document.getElementById('evModalBody').innerHTML = buildModalBody(data);
+  document.getElementById('evModalBody').querySelectorAll('.lb-photo').forEach(item => {
+    item.addEventListener('click', () => {
+      if (typeof window.openLightbox === 'function') window.openLightbox(item.querySelector('img').src);
+    });
+  });
 
   modal.hidden = false;
   document.body.style.overflow = 'hidden';
@@ -1252,6 +1457,130 @@ function initGalleryCardModals() {
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openEventModal(card.dataset.openEvent); }
     });
   });
+}
+
+/* ============================================
+   STORY MODALS
+   ============================================ */
+function openStoryModal(storyId) {
+  const modal  = document.getElementById('stModal');
+  const hero   = document.getElementById('stModalHero');
+  const catEl  = document.getElementById('stModalCat');
+  const titleEl = document.getElementById('stModalTitle');
+  const bodyEl  = document.getElementById('stModalBody');
+  if (!modal) return;
+  const data = STORIES_DATA[storyId];
+  if (!data) return;
+
+  const l = lang;
+  hero.className = 'st-modal__hero ' + data.heroMod;
+
+  catEl.textContent  = data.cat[l];
+  titleEl.textContent = data.title[l];
+
+  const detailIcon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg>';
+  const detailsHTML = data.details[l].map(d =>
+    `<div class="st-modal__detail">${detailIcon}<span>${d.label}: <strong>${d.value}</strong></span></div>`
+  ).join('');
+
+  let videoHTML = '';
+  if (data.videoId) {
+    const vSrc = `https://player.vimeo.com/video/${data.videoId}?badge=0&byline=0&portrait=0&title=0${data.videoHash ? '&h=' + data.videoHash : ''}`;
+    const vLabel = l === 'es' ? 'Video' : 'Video';
+    videoHTML = `<div class="ev-modal__section-title">${vLabel}</div>` +
+      `<div class="st-modal__video-wrap"><iframe src="${vSrc}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`;
+  }
+
+  let photosHTML = '';
+  if (data.photos && data.photos.length) {
+    const galleryTitle = l === 'es' ? 'Galería de Fotos' : 'Photo Gallery';
+    const items = data.photos.map(p =>
+      `<div class="ev-modal__photo-item lb-photo"><img src="${data.photoPath}${p}" alt="" loading="lazy"/></div>`
+    ).join('');
+    photosHTML = `<div class="ev-modal__section-title">${galleryTitle}</div><div class="ev-modal__photo-grid">${items}</div>`;
+  }
+
+  bodyEl.innerHTML =
+    `<div class="st-modal__quote"><p>${data.quote[l]}</p><cite>— ${data.quoteBy[l]}</cite></div>` +
+    data.body[l] +
+    `<div class="st-modal__details">${detailsHTML}</div>` +
+    videoHTML +
+    photosHTML;
+
+  bodyEl.querySelectorAll('.lb-photo').forEach(item => {
+    item.addEventListener('click', () => {
+      if (typeof window.openLightbox === 'function') window.openLightbox(item.querySelector('img').src);
+    });
+  });
+
+  modal.hidden = false;
+  document.body.style.overflow = 'hidden';
+  requestAnimationFrame(() => requestAnimationFrame(() => modal.classList.add('active')));
+}
+
+function initStoryModals() {
+  const modal = document.getElementById('stModal');
+  if (!modal) return;
+  const panel = modal.querySelector('.st-modal__panel');
+
+  document.querySelectorAll('.story-card').forEach(card => {
+    const btn = card.querySelector('[data-story]');
+    if (!btn) return;
+    card.addEventListener('click', () => openStoryModal(btn.dataset.story));
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('role', 'button');
+    card.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openStoryModal(btn.dataset.story); }
+    });
+  });
+
+  const closeModal = () => {
+    panel.style.transition = '';
+    panel.style.transform  = '';
+    panel.style.opacity    = '';
+    modal.classList.remove('active');
+    setTimeout(() => { modal.hidden = true; document.body.style.overflow = ''; }, 360);
+  };
+
+  document.getElementById('stModalClose').addEventListener('click', closeModal);
+  document.getElementById('stModalOverlay').addEventListener('click', closeModal);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !modal.hidden) closeModal(); });
+
+  // Prevent background page scroll on mobile when touching outside the panel
+  modal.addEventListener('touchmove', e => {
+    if (!panel.contains(e.target)) e.preventDefault();
+  }, { passive: false });
+
+  // ── Swipe down to close (mobile) ──
+  let swipeStartY = 0;
+  panel.addEventListener('touchstart', e => {
+    swipeStartY = e.touches[0].clientY;
+  }, { passive: true });
+
+  panel.addEventListener('touchmove', e => {
+    const dy = e.touches[0].clientY - swipeStartY;
+    if (panel.scrollTop === 0 && dy > 0) {
+      e.preventDefault();
+      panel.style.transition = 'none';
+      panel.style.transform  = `translateY(${Math.min(dy * 0.55, 130)}px)`;
+      panel.style.opacity    = String(Math.max(0.35, 1 - dy / 320));
+    }
+  }, { passive: false });
+
+  panel.addEventListener('touchend', e => {
+    const dy = e.changedTouches[0].clientY - swipeStartY;
+    if (panel.scrollTop === 0 && dy > 80) {
+      panel.style.transition = 'transform 0.22s ease, opacity 0.22s ease';
+      panel.style.transform  = 'translateY(100%)';
+      panel.style.opacity    = '0';
+      setTimeout(closeModal, 230);
+    } else {
+      panel.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+      panel.style.transform  = '';
+      panel.style.opacity    = '';
+      setTimeout(() => { panel.style.transition = ''; }, 300);
+    }
+  }, { passive: true });
 }
 
 function initEventModals() {
@@ -1580,6 +1909,161 @@ function cpRenderGoleadores(data) {
 }
 
 /* ============================================
+   LIGHTBOX
+   ============================================ */
+function initLightbox() {
+  const overlay  = document.getElementById('lbOverlay');
+  const wrap     = document.getElementById('lbWrap');
+  const img      = document.getElementById('lbImg');
+  const closeBtn = document.getElementById('lbClose');
+  const hint     = document.getElementById('lbHint');
+  if (!overlay) return;
+
+  let scale = 1, tx = 0, ty = 0;
+  const MIN = 1, MAX = 5;
+  let dragging = false, startX = 0, startY = 0;
+  let lastPinchDist = 0, lastTapTime = 0;
+
+  const applyT = (animate) => {
+    img.style.transition = animate ? 'transform 0.3s ease' : '';
+    img.style.transform  = `translate(${tx}px,${ty}px) scale(${scale})`;
+  };
+
+  const reset = (animate = true) => {
+    scale = 1; tx = 0; ty = 0;
+    applyT(animate);
+    wrap.classList.remove('panning');
+  };
+
+  window.openLightbox = (src) => {
+    img.src = src;
+    overlay.hidden = false;
+    document.body.style.overflow = 'hidden';
+    hint.textContent = lang === 'es'
+      ? 'Doble clic · Scroll o pellizca para hacer zoom · ESC para cerrar'
+      : 'Double click · Scroll or pinch to zoom · ESC to close';
+    reset(false);
+    requestAnimationFrame(() => overlay.classList.add('active'));
+  };
+
+  const close = () => {
+    overlay.classList.remove('active');
+    setTimeout(() => {
+      overlay.hidden = true;
+      img.src = '';
+      document.body.style.overflow = '';
+      reset(false);
+    }, 260);
+  };
+
+  closeBtn.addEventListener('click', close);
+  overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !overlay.hidden) close(); });
+
+  // ── Wheel zoom toward cursor ──
+  wrap.addEventListener('wheel', e => {
+    e.preventDefault();
+    const factor   = e.deltaY < 0 ? 1.15 : 1 / 1.15;
+    const newScale = Math.min(MAX, Math.max(MIN, scale * factor));
+    if (newScale === scale) return;
+    const rect = wrap.getBoundingClientRect();
+    const cx   = e.clientX - rect.left - rect.width  / 2;
+    const cy   = e.clientY - rect.top  - rect.height / 2;
+    tx = cx * (1 - newScale / scale) + tx * (newScale / scale);
+    ty = cy * (1 - newScale / scale) + ty * (newScale / scale);
+    scale = newScale;
+    if (scale <= MIN) { scale = MIN; tx = 0; ty = 0; }
+    wrap.classList.toggle('panning', scale > 1);
+    applyT(false);
+  }, { passive: false });
+
+  // ── Double-click toggle zoom ──
+  wrap.addEventListener('dblclick', e => {
+    e.stopPropagation();
+    if (scale > 1) { reset(); return; }
+    const rect   = wrap.getBoundingClientRect();
+    const newScale = 2.5;
+    const cx = e.clientX - rect.left - rect.width  / 2;
+    const cy = e.clientY - rect.top  - rect.height / 2;
+    scale = newScale;
+    tx = -cx * (newScale - 1);
+    ty = -cy * (newScale - 1);
+    wrap.classList.add('panning');
+    applyT(true);
+  });
+
+  // ── Mouse drag ──
+  wrap.addEventListener('mousedown', e => {
+    if (scale <= 1) return;
+    e.preventDefault();
+    dragging = true; startX = e.clientX - tx; startY = e.clientY - ty;
+  });
+  document.addEventListener('mousemove', e => {
+    if (!dragging) return;
+    tx = e.clientX - startX; ty = e.clientY - startY;
+    applyT(false);
+  });
+  document.addEventListener('mouseup', () => { dragging = false; });
+
+  // ── Touch: pinch-to-zoom + drag + double-tap ──
+  wrap.addEventListener('touchstart', e => {
+    if (e.touches.length === 2) {
+      lastPinchDist = Math.hypot(
+        e.touches[0].clientX - e.touches[1].clientX,
+        e.touches[0].clientY - e.touches[1].clientY
+      );
+    } else if (e.touches.length === 1) {
+      const now = Date.now();
+      if (now - lastTapTime < 280) {
+        e.preventDefault();
+        if (scale > 1) { reset(); }
+        else {
+          const rect = wrap.getBoundingClientRect();
+          const newScale = 2.5;
+          const cx = e.touches[0].clientX - rect.left - rect.width  / 2;
+          const cy = e.touches[0].clientY - rect.top  - rect.height / 2;
+          scale = newScale; tx = -cx * (newScale - 1); ty = -cy * (newScale - 1);
+          wrap.classList.add('panning');
+          applyT(true);
+        }
+      }
+      lastTapTime = now;
+      startX = e.touches[0].clientX - tx;
+      startY = e.touches[0].clientY - ty;
+    }
+  }, { passive: false });
+
+  wrap.addEventListener('touchmove', e => {
+    e.preventDefault();
+    if (e.touches.length === 2) {
+      const dist = Math.hypot(
+        e.touches[0].clientX - e.touches[1].clientX,
+        e.touches[0].clientY - e.touches[1].clientY
+      );
+      const newScale = Math.min(MAX, Math.max(MIN, scale * dist / lastPinchDist));
+      const rect = wrap.getBoundingClientRect();
+      const mx   = (e.touches[0].clientX + e.touches[1].clientX) / 2 - rect.left - rect.width  / 2;
+      const my   = (e.touches[0].clientY + e.touches[1].clientY) / 2 - rect.top  - rect.height / 2;
+      tx = mx * (1 - newScale / scale) + tx * (newScale / scale);
+      ty = my * (1 - newScale / scale) + ty * (newScale / scale);
+      scale = newScale;
+      lastPinchDist = dist;
+      if (scale <= MIN) { scale = MIN; tx = 0; ty = 0; }
+      wrap.classList.toggle('panning', scale > 1);
+      applyT(false);
+    } else if (e.touches.length === 1 && scale > 1) {
+      tx = e.touches[0].clientX - startX;
+      ty = e.touches[0].clientY - startY;
+      applyT(false);
+    }
+  }, { passive: false });
+
+  wrap.addEventListener('touchend', e => {
+    if (e.touches.length === 0 && scale <= MIN) reset();
+  }, { passive: true });
+}
+
+/* ============================================
    INIT
    ============================================ */
 document.addEventListener('DOMContentLoaded', () => {
@@ -1598,6 +2082,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initAboutSlider();
   loadLatestYouTubeVideos();
   initScrollExtras();
+  initLightbox();
+  initStoryModals();
   initEventModals();
   initGalleryCardModals();
   initCountdown();
