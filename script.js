@@ -20,7 +20,9 @@ function unlockScroll() {
   document.body.style.position = '';
   document.body.style.top = '';
   document.body.style.width = '';
+  document.documentElement.style.scrollBehavior = 'auto';
   window.scrollTo(0, _scrollLockY);
+  setTimeout(() => { document.documentElement.style.scrollBehavior = ''; }, 0);
 }
 
 /* ============================================
@@ -1607,9 +1609,10 @@ function initStoryModals() {
 }
 
 function initEventModals() {
-  const modal   = document.getElementById('evModal');
-  const overlay = document.getElementById('evModalOverlay');
+  const modal    = document.getElementById('evModal');
+  const overlay  = document.getElementById('evModalOverlay');
   const closeBtn = document.getElementById('evModalClose');
+  const panel    = modal ? modal.querySelector('.ev-modal__panel') : null;
   if (!modal) return;
 
   document.querySelectorAll('.ev-card[data-event]').forEach(card => {
@@ -1620,6 +1623,9 @@ function initEventModals() {
   });
 
   const closeModal = () => {
+    panel.style.transition = '';
+    panel.style.transform  = '';
+    panel.style.opacity    = '';
     modal.classList.remove('active');
     setTimeout(() => { modal.hidden = true; unlockScroll(); }, 360);
   };
@@ -1627,6 +1633,38 @@ function initEventModals() {
   closeBtn.addEventListener('click', closeModal);
   overlay.addEventListener('click', closeModal);
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && !modal.hidden) closeModal(); });
+
+  // Swipe-down-to-close (mobile bottom sheet)
+  let swipeStartY = 0;
+  panel.addEventListener('touchstart', e => {
+    swipeStartY = e.touches[0].clientY;
+    panel.style.transition = 'transform 0.1s ease, opacity 0.1s ease';
+  }, { passive: true });
+  panel.addEventListener('touchmove', e => {
+    const dy = e.touches[0].clientY - swipeStartY;
+    if (dy > 0 && panel.scrollTop === 0) {
+      panel.style.transform = `translateY(${dy}px)`;
+      panel.style.opacity   = `${Math.max(0.4, 1 - dy / 300)}`;
+      e.preventDefault();
+    }
+  }, { passive: false });
+  panel.addEventListener('touchend', e => {
+    const dy = e.changedTouches[0].clientY - swipeStartY;
+    if (panel.scrollTop === 0 && dy > 80) {
+      panel.style.transition = 'transform 0.22s ease, opacity 0.22s ease';
+      panel.style.transform  = 'translateY(100%)';
+      panel.style.opacity    = '0';
+      setTimeout(closeModal, 230);
+    } else {
+      panel.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+      panel.style.transform  = '';
+      panel.style.opacity    = '';
+      setTimeout(() => { panel.style.transition = ''; }, 300);
+    }
+  }, { passive: true });
+  modal.addEventListener('touchmove', e => {
+    if (!panel.contains(e.target)) e.preventDefault();
+  }, { passive: false });
 }
 
 /* ============================================
